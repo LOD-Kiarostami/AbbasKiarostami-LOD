@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" />
+    <!-- JS for the title animation -->
+    <script src="titleAnimation.js"></script>
+    <!-- JS for the magnifying glass -->
+    <script src="magnify.js"></script>
+    <script src="script.js"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,600,0,0" />
+    <title>Document</title>
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark  fixed-top">
+        <div class="container px-01">
+            <a class="navbar-brand" href="#page-top" id="nav-title">Rȃmi, A<span style="color:#b4bca3"> LOD</span> Project</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!--id="navbarResponsive"-->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#study" id="nav-item">The Project</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#items" id="nav-item">Items</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#KO" aria-expanded="false">Knowledge Organization</a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                            <li><a class="dropdown-item" href="#cmap">Conceptual Map</a></li>
+                            <li><a class="dropdown-item" href="#erm">E/R Model</a></li>
+                            <li><a class="dropdown-item" href="#man">Metadata Analysis</a></li>
+                            <li><a class="dropdown-item" href="#mal">Metadata Alignment</a></li>
+                            <li><a class="dropdown-item" href="#tm">Theoretical Model</a></li>
+                            <li><a class="dropdown-item" href="#eerm">Enhanced E/R Model</a></li>
+                            <li><a class="dropdown-item" href="#cm">Conceptual Model</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#KR" aria-expanded="false">Knowledge Representation</a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                            <li><a class="dropdown-item" href="#itdes">Items Description</a></li>
+                            <li><a class="dropdown-item" href="#rdfp">RDF Production</a></li>
+                            <li><a class="dropdown-item" href="#rdfv">RDF Visualization</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#team" id="nav-item">The Team</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="parallaxhead overlay text-white">
+        <div class="container px-4 text-center">
+            <h1 class="fw-bolder">EBRAHIM MONSEFI</h1>
+            <br><br>
+            <p class="lead " id="subtitle" style="font-weight: bolder;">The Lyricist, The Artist, The Obscure, The Acclaimed,</p>
+            <h4> <i> The HUMAN</i></h4>
+
+        </div>
+    </header>
+    <section id="study">
+        <!-- To set the distance from the previous section/parallax: css, line 11299 (padding-top/bottom)-->
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center">
+                <div style="text-align: justify;">
+                    <h2 class="sectitle">About Ebrahim Monsefi</h2>
+                    <br>
+                    <div class="floatimgalign">
+                        <p style="margin-top:7px;">Ebrahim Monsefi, a poet, lyricist, and artist from the Southern region of Hormozgan in Iran, was born in 1945. Monsefi passed away in 1997, at the age of fifty-two. Modern Iran hears his lyrics through the melody of many musicians,
+                            yet his name falls into obscurity. Even though his passion for creative production ignited at a young age, his first and only music album was released 10 years after his death.
+                            <br> Monsefi chose the signature name of Rȃmi, but through his early usage of free verse in poetry he is called “The Nima of the South”. “Nima” refers to the name of the pioneer poet of “free verse” in the capital. Monsefi
+                            with a few of his contemporaries were the first individuals to turn to free verse poetry in the southern region, laying the groundwork for the continuation of this literary movement in the area. Being unquestionably influenced
+                            by “Ahmad Shamlou” in his free verse poems sometimes adds a distinctive touch to his poetry due to the influence of the local climate and geography.
+                            <br> Monsefi’s interest in Spanish flamenco and Indian music has influenced him to create highly admired works. He brought about a fundamental transformation in the genre of indigenous songwriting by leaning towards songs with
+                            social themes. His simple and unpretentious guitar-accompanied performances still attract numerous audiences and inspire young musicians.
+                        </p>
+                        <p>
+                            <figure>
+                                <img src="images/image-2.jpg" alt="Photo of Ebrahim" class="rightfloatimg">
+                        </p>
+                    </div>
+                    <br>
+                    <h2 class="sectitle">The Project</h2>
+                    <br>
+                    <p>With this project, we propose to shed light on the peculiarity and troubles of an artist and his creative mind by connecting the person himself and a sample of the heterogeneous entities of his creation. To do that, we explored the
+                        possibilities offered by the technologies used in the Semantic Web, such as vocabularies, ontologies, RDF, and URIs. Therefore, the project aims to model an organized linked open-data environment that connects information categorized
+                        as concepts, items, people, places, and events about <span style="color: #458b1b; font-weight: bold;">Rȃmi</span>, in the most interoperable and semantically meaningful way possible.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <hr class="bookends">
+    <section id="items">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center">
+                <div class="items bgitems">
+                    <h2 class="sectitle">A journey through the items</h2>
+                    <br>
+                    <p>This section summarizes the ten items that were taken into consideration. They were selected according to relevance and heterogeneity criteria to provide completeness to the project. They form a complex relationship network with the
+                        figure of <span style="color:#6e7654; font-weight:bold">Rȃmi</span> at its center. An essential metadata, a short description, and a reference link are provided for each item.
+                    </p>
+                    <!-- ITEMS -->
+                    <section class="polaroid-container bg-img">
+                        <div class="polaroid">
+                            <a href="https://rami.ir/vasayaye-rami/" target="blank" title="rami's will"><img src="images/item-1.jpg" alt="rami's will" style="width:100%; object-fit: cover;" class="polaroidimg">
+                                <div class="polartext">Rȃmi's Will</div>
+                            </a>
+                            <div class="polartextcomm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum adipisci quas dolores quis, nam sapiente eligendi. Aut aliquam eius corporis dolorum corrupti. Quam fugiat aliquam facere tempora, recusandae consequuntur reiciendis.</div>
+                        </div>
+                        <div class="polaroid">
+                            <a href="https://rami.ir/taranehaye-rami-album/" target="blank" title="Album"><img src="images/item-2.jpg" alt="Album" style="width:100%; object-fit: cover;" class="polaroidimg">
+                                <div class="polartext">Rȃmi's Songs</div>
+                            </a>
+                            <div class="polartextcomm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora eligendi eum sit corrupti architecto numquam, aliquid est ullam ipsum aperiam accusantium ducimus odio eaque beatae? Vel atque ducimus dolore eveniet.</div>
+                        </div>
+                        <div class="polaroid">
+                            <a href="#" target="blank" title="Photo"><img src="images/item-3.jpg" alt="Photo" style="width:100%; object-fit: cover;" class="polaroidimg">
+                                <div class="polartext">Rȃmi's Portrait</div>
+                            </a>
+                            <div class="polartextcomm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora eligendi eum sit corrupti architecto numquam, aliquid est ullam ipsum aperiam accusantium ducimus odio eaque beatae? Vel atque ducimus dolore eveniet.</div>
+                        </div>
+                        <div class="polaroid">
+                            <a href="https://filmba.ir/index.php/documentary-films-alphabet/106-k/560-nahang" target="blank" title="Movie"><img src="images/item-4.jpg" alt="Movie" style="width:100%; object-fit: cover;" class="polaroidimg">
+                                <div class="polartext">"Whale" Movie</div>
+                            </a>
+                            <div class="polartextcomm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora eligendi eum sit corrupti architecto numquam, aliquid est ullam ipsum aperiam accusantium ducimus odio eaque beatae? Vel atque ducimus dolore eveniet. for watching,
+                                follow the link.</div>
+                        </div>
+                        <div class="polaroid">
+                            <a href="https://www.imdb.com/title/tt7596994/" target="blank" title="documentary"><img src="images/item-5.avif" alt="documentary" style="width:100%; object-fit: fill;" class="polaroidimg">
+                                <div class="polartext">"Chicheka Lullaby" Documentary</div>
+                            </a>
+                            <div class="polartextcomm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora eligendi eum sit corrupti architecto numquam, aliquid est ullam ipsum aperiam accusantium ducimus odio eaque beatae? Vel atque ducimus dolore eveniet.</div>
+                        </div>
+                        <div class="polaroid">
+                            <a href="https://rami.ir/drawing/#!/grs/0" target="blank" title="drawing"><img src="images/item-6.jpg" alt="drawing" style="width:100%; object-fit: fill;" class="polaroidimg">
+                                <div class="polartext">Rȃmi's Drawing</div>
+                            </a>
+                            <div class="polartextcomm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora eligendi eum sit corrupti architecto numquam, aliquid est ullam ipsum aperiam accusantium ducimus odio eaque beatae? Vel atque ducimus dolore eveniet.</div>
+                        </div>
+                        <div class="polaroid">
+                            <a href="https://rami.ir/zistan/" target="blank" title="poetry"><img src="images/item-7.jpg" alt="poetry" style="width:100%; object-fit: fill;" class="polaroidimg">
+                                <div class="polartext">"To Live" Poetry</div>
+                            </a>
+                            <div class="polartextcomm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora eligendi eum sit corrupti architecto numquam, aliquid est ullam ipsum aperiam accusantium ducimus odio eaque beatae? Vel atque ducimus dolore eveniet.</div>
+                        </div>
+                        <div class="polaroid">
+                            <a href="https://rami.ir/zardeamigh/" target="blank" title="exhibition"><img src="images/item-8.jpg" alt="exhibition" style="width:100%; object-fit: fill;" class="polaroidimg">
+                                <div class="polartext">"Deep Yellow" Exhibition</div>
+                            </a>
+                            <div class="polartextcomm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora eligendi eum sit corrupti architecto numquam, aliquid est ullam ipsum aperiam accusantium ducimus odio eaque beatae? Vel atque ducimus dolore eveniet.</div>
+                        </div>
+                        <div class="polaroid">
+                            <a href="https://www.goodreads.com/book/show/32568621" target="blank" title="book"><img src="images/item-9.jpg" alt="book" style="width:100%; object-fit: fill;" class="polaroidimg">
+                                <div class="polartext">Rȃmi's Book</div>
+                            </a>
+                            <div class="polartextcomm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora eligendi eum sit corrupti architecto numquam, aliquid est ullam ipsum aperiam accusantium ducimus odio eaque beatae? Vel atque ducimus dolore eveniet.</div>
+                        </div>
+                        <div class="polaroid">
+                            <a href="https://rami.ir/Labkhand/" target="blank" title="lyrics"><img src="images/item-10.jpg" alt="lyrics" style="width:100%; object-fit: fill;" class="polaroidimg">
+                                <div class="polartext">"Smile" Lyric</div>
+                            </a>
+                            <div class="polartextcomm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora eligendi eum sit corrupti architecto numquam, aliquid est ullam ipsum aperiam accusantium ducimus odio eaque beatae? Vel atque ducimus dolore eveniet.</div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="bookends">
+    <section id="KO">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-16">
+                    <h2 class="sectitle">Knowledge Organization</h2>
+                    <p class="lead" style="text-align:justify;"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis optio corporis velit, repellat tenetur inventore rem, ducimus accusamus dolore doloremque debitis voluptatum architecto, nemo impedit odio explicabo reprehenderit
+                        sit ea.
+                    </p>
+                    <h2 id="cmap" class="sectitle" style="font-size: 20pt;">Conceptual Map</h2>
+                    <p style="text-align:justify;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ab quia ex nemo quibusdam ducimus excepturi quisquam incidunt sequi, accusantium est explicabo nostrum officiis adipisci illo tempora quasi facere dolorem!</p>
+                    <br>
+                    <div class="img-magnifier-container">
+                        <img id="myimage" src="images/ConceptualMap.jpg" alt="Conceptual Map" style="max-width:100%;max-height:100%; border: 2px solid #b4bca3;"></div>
+                    <!--zoom img-->
+                    <button class="openmodalmyBtn ">Zoom Image</button>
+                    <div class="modalmyModal ">
+                        <div class="modal-content ">
+                            <span class="close ">&times;</span>
+                            <p class="modaltext ">Conceptual Map</p>
+                            <img src="images/ConceptualMap.jpg ">
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <h2 id="erm " class="sectitle " style="font-size: 20pt; ">E/R Model</h2>
+                    <br>
+                    <p style="text-align:justify; ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aperiam! Aut nulla velit vero cupiditate consequuntur, totam distinctio ad animi nesciunt temporibus voluptatem earum quo ea commodi aliquam dolores incidunt.</p>
+                    <br>
+                    <div class="img-magnifier-container "> <img id="myimage" src="images/ERModel.jpg " alt="E/R Model " style="max-width:100%;max-height:100%; border: 2px solid #b4bca3;"></div>
+                    <!--zoom img-->
+                    <button class="openmodalmyBtn">Zoom Image</button>
+                    <div class="modalmyModal ">
+                        <div class="modal-content ">
+                            <span class="close ">&times;</span>
+                            <p class="modaltext ">E/R Model</p>
+                            <img src="maps/ERModel.jpg ">
+                        </div>
+                    </div>
+                    <br style="margin-top:10px; ">
+                    <br><br>
+                    <hr class="bookends ">
+                    <br>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
