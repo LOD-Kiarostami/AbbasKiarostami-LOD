@@ -89,7 +89,7 @@ body {
     line-height: var(--bs-body-line-height);
     color: var(--bs-body-color);
     text-align: var(--bs-body-text-align);
-    background-color: var(--bs-body-bg);
+    background-color: var(--bs-gray-400);
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -11701,4 +11701,22 @@ footer a:hover {
 .bookends-dots:after {
     transform: translateZ(0) rotate(135deg);
     right: -10px;
+}
+
+@media (max-width: 600px) {
+    .sectitle {
+        text-align: center;
+    }
+    .rightfloatimg {
+        float: center;
+    }
+    .openmodalmyBtn {
+        font-weight: 800;
+        font-size: 16px;
+        padding: 8px 15px;
+        border: solid #b4bca3 1px;
+    }
+    .sectitle {
+        text-align: center;
+    }
 }
