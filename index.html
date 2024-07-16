@@ -300,6 +300,71 @@
                         </tr>
                     </table>
                 </div>
+                <div class="col-lg-8">
+                    <h2 id="mal" class="sectitle" style="font-size: 20pt;">Metadata Alignment</h2>
+                    <p style="text-align:justify;">After establishing the various standards, the next step involves comparing and aligning the metadata elements and properties significant for describing the domain based on the standards' vocabularies and rules. Any aspects that lack
+                        correspondence are marked as "N/A".
+                    </p>
+                </div>
+                <div id="myBtnContainer" class="metaAlignBtn col-lg-10">
+                    <!-- Buttons for the filtering with the 4W-->
+                    <button class="btn active" onclick="filterSelection('metaAlign','who')" id="who">WHO</button>
+                    <button class="btn" onclick="filterSelection('metaAlign','what')" id="what">WHAT</button>
+                    <button class="btn" onclick="filterSelection('metaAlign','when')" id="when">WHEN</button>
+                    <button class="btn" onclick="filterSelection('metaAlign','where')" id="where">WHERE</button>
+                </div>
+                <div class="filterDiv metaAlign who col-lg-10">
+                    <!-- WHO CONTENT -->
+                    <table id="who">
+                        <thead>
+                            <tr id="trhead">
+                                <th>Property</th>
+                                <th>Dublin Core</th>
+                                <th>Schema.org</th>
+                                <th>MARC21</th>
+                                <th>EAD</th>
+                                <th>CCO (CDWA&ast;)</th>
+                                <th>MIDAS</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td class="td1">Creator</td>
+                            <td>dcterms:creator</td>
+                            <td>author, creator, producer, composer, director</td>
+                            <td>100</td>
+                            <td>&lt; author &gt;, &lt;origination&gt;</td>
+                            <td>Creator Display (specify Creator Extent, Creator Role)</td>
+                            <td>Person Name, Organization Name (specify Role)</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Contributor</td>
+                            <td>dcterms:contributor</td>
+                            <td>contributor</td>
+                            <td>511</td>
+                            <td>N/A</td>
+                            <td>Creator Display (specify Creator Extent, Creator Role)</td>
+                            <td>Person Name, Organization Name (specify Role)</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Ownership record</td>
+                            <td>dcterms:provenance</td>
+                            <td>N/A</td>
+                            <td>6xx, 0xx</td>
+                            <td>&lt;acqinfo&gt;</td>
+                            <td>&ast;23. Ownership/Collecting History, 23.1.Provenance Description, 23.1.1 Aquisition Description </td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Publisher</td>
+                            <td>dcterms:publisher</td>
+                            <td>publisher</td>
+                            <td>260$b, 264b, 710</td>
+                            <td>&lt;publisher&gt;</td>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
     </section>
