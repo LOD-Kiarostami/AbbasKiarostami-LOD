@@ -11387,10 +11387,11 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
-    border: 1px solid #ddd;
+    border: 1px solid #b4bca3;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     margin-right: auto;
     margin-left: auto;
+    background-color: rgb(220, 220, 220);
 }
 
 th,
@@ -11400,19 +11401,19 @@ td {
 }
 
 table tbody tr {
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #b4bca3;
 }
 
 table tbody tr:last-of-type {
-    border-bottom: 2px solid #dddddd;
+    border-bottom: 2px solid #b4bca3;
 }
 
 table thead {
-    background-color: #e4cda0;
+    background-color: #b4bca3;
 }
 
 table tr:hover:not(#trhead) {
-    background-color: #fee4b2;
+    background-color: #b4bca3;
 }
 
 .td1 {
@@ -11719,4 +11720,9 @@ footer a:hover {
     .sectitle {
         text-align: center;
     }
+}
+
+
+}
+
 }
