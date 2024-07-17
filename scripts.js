@@ -36,19 +36,28 @@ window.addEventListener('DOMContentLoaded', event => {
 
 // JAVASCRIPT FOR THE METADATA ALIGNMENT FILTERING
 
-filterSelection("metaAlign", "who")
-filterSelection("itemDesc", "treatise")
+
 
 function filterSelection(groupName, c) {
     var x, i;
     x = document.getElementsByClassName('filterDiv ' + groupName);
-    if (c == "all") c = "";
-    // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+
+    // Hide all elements with the specified groupName
     for (i = 0; i < x.length; i++) {
-        w3RemoveClass(x[i], "show");
-        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        x[i].style.display = "none";
+    }
+
+    // Show the elements that match the filter criteria
+    for (i = 0; i < x.length; i++) {
+        if (x[i].className.indexOf(c) > -1) {
+            x[i].style.display = "block";
+        }
     }
 }
+
+// Initial display setup
+filterSelection("metaAlign", "who");
+filterSelection("itemDesc", "treatise");
 
 // Show filtered elements
 function w3AddClass(element, name) {
