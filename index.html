@@ -329,7 +329,7 @@
                                 <th>FRBROO</th>
                             </tr>
                         </thead>
-                        <!-- <tr>
+                        <tr>
                             <td class="td1">Creator</td>
                             <td>dcterms:creator</td>
                             <td>author, creator, producer, composer, director</td>
@@ -339,33 +339,359 @@
                             <td>Person Name, Organization Name (specify Role)</td>
                         </tr>
                         <tr>
-                            <td class="td1">Contributor</td>
-                            <td>dcterms:contributor</td>
-                            <td>contributor</td>
-                            <td>511</td>
-                            <td>N/A</td>
+                            <td class="td1">Creator</td>
+                            <td>schema: creator</td>
                             <td>Creator Display (specify Creator Extent, Creator Role)</td>
-                            <td>Person Name, Organization Name (specify Role)</td>
+                            <td>dcterms: creator</td>
+                            <td>P24 has creator</td>
+                            <td>P50 author</td>
+                            <td>100</td>
+                            <td>frbroo: R17</td>
                         </tr>
                         <tr>
-                            <td class="td1">Ownership record</td>
-                            <td>dcterms:provenance</td>
+                            <td class="td1">Contributor</td>
+                            <td>schema: contributor</td>
+                            <td>Creator Display (specify Creator Extent, Creator Role)</td>
+                            <td>dcterms: contributor</td>
+                            <td>crm: P69_has_association_with</td>
+                            <td>P767 contributor to the creative work or subject</td>
+
+                            <td>700</td>
+                            <td>frbroo: R17 </td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Curator</td>
                             <td>N/A</td>
-                            <td>6xx, 0xx</td>
-                            <td>&lt;acqinfo&gt;</td>
-                            <td>&ast;23. Ownership/Collecting History, 23.1.Provenance Description, 23.1.1 Aquisition Description </td>
+                            <td>24.4. EXHIBITION CURATOR</td>
+                            <td>dcterms: contributor</td>
+                            <td>crm: P147 was curated by/ crm: P109 has current or former curator</td>
                             <td>N/A</td>
+                            <td>700 $e</td>
+                            <td>frbroo: R17</td>
                         </tr>
                         <tr>
                             <td class="td1">Publisher</td>
-                            <td>dcterms:publisher</td>
-                            <td>publisher</td>
-                            <td>260$b, 264b, 710</td>
-                            <td>&lt;publisher&gt;</td>
+                            <td>schema: publisher</td>
+                            <td>27.2.2.6. SOURCE PUBLISHER</td>
+                            <td>dcterms: publisher</td>
+                            <td>P14 carried out by</td>
+                            <td>P123 Publisher</td>
+                            <td>210:(Publication)</td>
+                            <td>frbroo: R19</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Actor/Player</td>
+                            <td>schema: actor</td>
+                            <td>N/A</td>
+                            <td>dcterms: contributor</td>
+                            <td>E39 Actor</td>
+                            <td>P161 Cast member</td>
                             <td>N/A</td>
                             <td>N/A</td>
-                        </tr> -->
+                        </tr>
+                        <tr>
+                            <td class="td1">Translator</td>
+                            <td>schema: translator</td>
+                            <td>27.2.2.4. SOURCE EDITOR/COMPILER</td>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                            <td>P665 translator</td>
+                            <td>N/A</td>
+                            <td>frbroo: R31</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Director</td>
+                            <td>schema: director</td>
+                            <td>4.1.4. Creator Role</td>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                            <td>P57 director</td>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Colleague</td>
+                            <td>schema: colleague</td>
+                            <td>4.1.4. Creator Role</td>
+                            <td>dcterm: hasPart</td>
+                            <td>P8 took place on</td>
+                            <td></td>
+                            <td></td>
+                            <td>frbroo: R16</td>
+                        </tr>
                     </table>
+                </div>
+                <div class="filterDiv metaAlign what col-lg-10">
+                    <!-- WHO CONTENT -->
+                    <table id="what">
+                        <thead>
+                            <tr id="trhead">
+                                <th>Property</th>
+                                <th>Schema.org</th>
+                                <th>CDWA</th>
+                                <th>DC</th>
+                                <th>CIDOC/CRM</th>
+                                <th>WIKIDATA</th>
+                                <th>MARC21</th>
+                                <th>FRBROO</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td class="td1">Type</td>
+                            <td>schema: type</td>
+                            <td>Work Type</td>
+                            <td>dcterms: type</td>
+                            <td>P2 has type</td>
+                            <td>P1163 media type</td>
+                            <td>336</td>
+                            <td>frbroo:CLP2 should have type</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Identifier</td>
+                            <td>schema: identifier</td>
+                            <td>*21.2.3. Repository Number</td>
+                            <td>dcterm: identifier</td>
+                            <td>P1 identifies</td>
+                            <td>P356 DOI</td>
+                            <td>020: (ISSN)</td>
+                            <td>frbroo: F13 Identifier</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Genre</td>
+                            <td>schema:genre</td>
+                            <td>N/A</td>
+                            <td>dcterms: type</td>
+                            <td>N/A</td>
+                            <td>P136 genre</td>
+                            <td>655 Index Term-Genre/Form </td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Subject</td>
+                            <td>schema: subjectOf</td>
+                            <td>31.2. Subject Name</td>
+                            <td>dcterms: subject</td>
+                            <td>P129 is subject of</td>
+                            <td>P921 main subject P180 depicts</td>
+                            <td>76xx</td>
+                            <td>frbroo: R59 had typical subject</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Language</td>
+                            <td>schema: inLanguage</td>
+                            <td>Language</td>
+                            <td>dcterms: language</td>
+                            <td>crm: P72_has_language</td>
+                            <td>P407 language of</td>
+                            <td>377</td>
+                            <td>frbroo: R60 used</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Translation</td>
+                            <td>schema: translationOfWork</td>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                            <td>crm:p73: has translation</td>
+                            <td>P747 has edition or translation</td>
+                            <td>767 Translation Entry</td>
+                            <td>frbroo: R31</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Dimension/Size</td>
+                            <td>schema: size</td>
+                            <td>6.1. DIMENSIONS DESCRIPTION</td>
+                            <td>dcterm: sizeOrDuration</td>
+                            <td>crm: E54 Dimension</td>
+                            <td>N/A</td>
+                            <td>300 $c</td>
+                            <td>frbroo: CLP43</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Children</td>
+                            <td></td>
+                            <td></td>
+                            <td>dcterm: isPartOf</td>
+                            <td>crm: P148 has component / schema:includes</td>
+                            <td>P179 Part of series P1433 published in</td>
+                            <td>762 Subseries Entry</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Parent</td>
+                            <td>schema: isPartOf</td>
+                            <td></td>
+                            <td></td>
+                            <td>P152 has parent (is parent of)</td>
+                            <td>N/A</td>
+                            <td>772 Supplement Parent Entry</td>
+                            <td>rbroo: R15i</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Price</td>
+                            <td>N/A</td>
+                            <td>23.3. COST OR VALUE</td>
+                            <td>N/A</td>
+                            <td>P179 had sales price</td>
+                            <td>N/A</td>
+                            <td>020 $c</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Copyright</td>
+                            <td>schema: copyrightNotice</td>
+                            <td>*22.1. Copyrights Satement</td>
+                            <td>dcterms: Rights</td>
+                            <td>N/A</td>
+                            <td>P275 copyright license</td>
+                            <td>264 $c</td>
+                            <td>frbroo: CLP104</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Format</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>p437 distribution format</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="filterDiv metaAlign where col-lg-10">
+                    <!-- WHO CONTENT -->
+                    <table id="where">
+                        <thead>
+                            <tr id="trhead">
+                                <th>Property</th>
+                                <th>Schema.org</th>
+                                <th>CDWA</th>
+                                <th>DC</th>
+                                <th>CIDOC/CRM</th>
+                                <th>WIKIDATA</th>
+                                <th>MARC21</th>
+                                <th>FRBROO</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td class="td1">Place of publication</td>
+                            <td>schema: contentLocation</td>
+                            <td>27.2.2.5. Source Publication Place</td>
+                            <td>dcterms: coverage</td>
+                            <td>E53 Place</td>
+                            <td>P1071 location of creation</td>
+                            <td>264 $a: (Publication, distribution)</td>
+                            <td>frbroo: R6</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Location</td>
+                            <td>schema: location/ schema: ContryOfOrigin</td>
+                            <td>29.2. Place Name</td>
+                            <td>dcterms: spatial</td>
+                            <td>crm: P7_took_place_at</td>
+                            <td>P291 place of publication</td>
+                            <td>752</td>
+                            <td>frbroo: R25i was performed in</td>
+                        </tr>
+
+                    </table>
+                </div>
+                <div class="filterDiv metaAlign when col-lg-10">
+                    <!-- WHO CONTENT -->
+                    <table id="when">
+                        <thead>
+                            <tr id="trhead">
+                                <th>Property</th>
+                                <th>Schema.org</th>
+                                <th>CDWA</th>
+                                <th>DC</th>
+                                <th>CIDOC/CRM</th>
+                                <th>WIKIDATA</th>
+                                <th>MARC21</th>
+                                <th>FRBROO</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td class="td1">Date of production/ publication</td>
+                            <td>schema: datePublished</td>
+                            <td>27.2.2.7. Source Publication Year</td>
+                            <td>dcterms: available</td>
+                            <td>E12 Production</td>
+                            <td>P577 publication date P1191 date of first performance</td>
+                            <td>264 - Production, Publication, Distribution, Manufacture, and Copyright Notice - $c date of production</td>
+                            <td>frbroo: R23 has date of production</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Date of creation</td>
+                            <td>schema: dateCreated</td>
+                            <td>4.2. Creation Date</td>
+                            <td>dcterms: created</td>
+                            <td>E12 Production</td>
+                            <td>P2754 production date</td>
+                            <td>500</td>
+                            <td>frbroo: R12 has date of creation</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Duration</td>
+                            <td>schema: duration</td>
+                            <td></td>
+                            <td>dcterm: SizeOrDuration</td>
+                            <td>crm:P4_has_time-span</td>
+                            <td>P2047 Duration</td>
+                            <td>306 Playing Time</td>
+                            <td>N/A</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-lg-8">
+                    <!-- END of the metadata alignment table -->
+                    <hr>
+                    <h2 id="tm" class="sectitle" style="font-size: 20pt;">Theoretical Model</h2>
+                    <p style="text-align:justify;">Delving deeper into data interpretation occurs through the Theoretical Framework. Here, beginning with items, subjects, and relationships within the study domain, we searched the web to gather additional pertinent information. This
+                        aims to address the following inquiries:
+
+                        <p>
+                            <ul>
+                                <li><b>Who</b>: Enhancing insights into individuals and their roles and positions related to the study subject.</li>
+                                <li><b>What</b>: Describing objects, including their purposes, significance, or distinctive features.
+                                </li>
+                                <li><b>Where</b>: Characterizing places and significant locations.</li>
+                                <li><b>When</b>: Adding specifics about noteworthy dates or related events.</li>
+                            </ul>
+                        </p>
+                        <div class="img-magnifier-container"> <img id="myimage2" src="" alt="Theoretical Model" style="max-width:100%;max-height:100%; border: 1px solid rgb(0, 0, 0);" onload="magnify('myimage2', 2);"></div>
+                        <!--zoom img-->
+                        <button class="openmodalmyBtn">Zoom Image</button>
+                        <div class="modalmyModal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <p class="modaltext">Theoretical Model</p>
+                                <img src="">
+                            </div>
+                        </div>
+                        <br>
+                        <h2 id="eerm" class="sectitle" style="font-size: 20pt;">Enhanced E/R Model</h2>
+                        <p style="text-align:justify;">The Theoretical Model, initially developed in natural language, is subsequently transformed into an Enhanced Entity/Relationship (E/R) Model. This refined version builds upon the previous E/R Model, incorporating the enhancements
+                            made during later stages of development.</p>
+                        <div class="img-magnifier-container"> <img id="myimage5" src="" alt="Enhanced E/R Model" style="max-width:100%; max-height:100%; border: 1px solid rgb(0, 0, 0);" onload="magnify('myimage5', 2);"></div>
+                        <!--zoom img-->
+                        <button class="openmodalmyBtn">Zoom Image</button>
+                        <div class="modalmyModal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <p class="modaltext">Enhanced E/R Model</p>
+                                <img src="">
+                            </div>
+                        </div>
+                        <br>
+                        <h2 id="cm" class="sectitle" style="font-size: 20pt;">Conceptual Model</h2>
+                        <p style="text-align:justify;">A heightened level of abstraction is achieved in this phase, as we transition from the theoretical model to the formal representation offered by the Conceptual Model. Here, an ontological methodology guides us, where subjects and
+                            relationships outlined in the theoretical model are restructured using appropriate classes and properties derived from existing schemas, vocabularies, and ontologies.
+                        </p>
+                        <div class="img-magnifier-container"> <img id="myimage3" src="" alt="Conceptual Model" style="max-width:100%;max-height:100%; border: 1px solid rgb(0, 0, 0);" onload="magnify('myimage3', 3);"></div>
+                        <!--zoom img-->
+                        <a href="" target="blank"><button
+                            class="newtabmyBtn">Zoom Image</button></a>
                 </div>
             </div>
         </div>
