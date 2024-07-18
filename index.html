@@ -193,8 +193,8 @@
                     <div class="img-magnifier-container">
                         <img id="myimage" src="images/ConceptualMap.jpg" alt="Conceptual Map" style="max-width:100%;max-height:100%; border: 2px solid #b4bca3;"></div>
                     <!--zoom img-->
-                    <button class="openmodalmyBtn ">Zoom Image</button>
-                    <div class="modalmyModal ">
+                    <button class="openmodalmyBtn" id="img-big">Zoom Image</button>
+                    <div class="modalmyModal">
                         <div class="modal-content ">
                             <span class="close ">&times;</span>
                             <p class="modaltext ">Conceptual Map</p>
@@ -209,7 +209,7 @@
                     <br>
                     <div class="img-magnifier-container "> <img id="myimage" src="images/ERModel.jpg " alt="E/R Model " style="max-width:100%;max-height:100%; border: 2px solid #b4bca3;"></div>
                     <!--zoom img-->
-                    <button class="openmodalmyBtn">Zoom Image</button>
+                    <button class="openmodalmyBtn" id="img-big">Zoom Image</button>
                     <div class="modalmyModal ">
                         <div class="modal-content ">
                             <span class="close ">&times;</span>
@@ -368,7 +368,7 @@
                             <td>dcterms: publisher</td>
                             <td>P14 carried out by</td>
                             <td>P123 Publisher</td>
-                            <td>210:(Publication)</td>
+                            <td>260</td>
                             <td>frbroo: R19</td>
                         </tr>
                         <tr>
@@ -378,7 +378,7 @@
                             <td>dcterms: contributor</td>
                             <td>E39 Actor</td>
                             <td>P161 Cast member</td>
-                            <td>N/A</td>
+                            <td>700 $e</td>
                             <td>N/A</td>
                         </tr>
                         <tr>
@@ -388,7 +388,7 @@
                             <td>N/A</td>
                             <td>N/A</td>
                             <td>P665 translator</td>
-                            <td>N/A</td>
+                            <td>700 $e</td>
                             <td>frbroo: R31</td>
                         </tr>
                         <tr>
@@ -400,16 +400,6 @@
                             <td>P57 director</td>
                             <td>N/A</td>
                             <td>N/A</td>
-                        </tr>
-                        <tr>
-                            <td class="td1">Colleague</td>
-                            <td>schema: colleague</td>
-                            <td>4.1.4. Creator Role</td>
-                            <td>dcterm: hasPart</td>
-                            <td>P8 took place on</td>
-                            <td>P3373</td>
-                            <td>N/A</td>
-                            <td>frbroo: R16</td>
                         </tr>
                     </table>
                 </div>
@@ -436,7 +426,7 @@
                             <td>P2 has type</td>
                             <td>P1163 media type</td>
                             <td>336</td>
-                            <td>frbroo:CLP2 should have type</td>
+                            <td>frbroo:CLP2</td>
                         </tr>
                         <tr>
                             <td class="td1">Identifier</td>
@@ -510,7 +500,7 @@
                         </tr>
                         <tr>
                             <td class="td1">Parent</td>
-                            <td>schema: isPartOf??????????</td>
+                            <td>N/A</td>
                             <td>N/A</td>
                             <td>N/A</td>
                             <td>P152 has parent (is parent of)</td>
@@ -704,7 +694,472 @@
                     </p>
 
                     <!-- the table -->
+                    <div class="container">
+                        <div id="myBtnContainer" class="itemDescBtn">
+                            <button class="btn active" onclick="filterSelection('itemDesc', 'Taste-of-Cherry')" id="Taste-of-Cherry"><b>Taste of Cherry</b></button>
+                            <button class="btn" onclick="filterSelection('itemDesc','Certified-Copy')" id="Certified-Copy"><b>Certified Copy</b></button>
+                            <button class="btn" onclick="filterSelection('itemDesc','Signature')" id="Signature"><b>Signature</b></button>
+                            <button class="btn" onclick="filterSelection('itemDesc','Untitled')" id="Untitled"><b>Untitled,2000</b></button>
+                            <button class="btn" onclick="filterSelection('itemDesc','WhereIsKiarostami')" id="WhereIsKiarostami"><b>Where Is Kiarostami</b></button>
+                            <button class="btn" onclick="filterSelection('itemDesc','Lessons-with-Kiarostami')" id="Lessons-with-Kiarostami"><b>Lessons with Kiarostami</b></button>
+                            <button class="btn" onclick="filterSelection('itemDesc','ImageMaker')" id="ImageMaker"><b>Kiarostami: Image Maker</b></button>
+                            <button class="btn" onclick="filterSelection('itemDesc','directs')" id="directs"><b>Kiarostami Directs</b></button>
+                            <button class="btn" onclick="filterSelection('itemDesc','document')" id="document"><b>76 Minutes 76 minutes and 15 seconds with Abbas Kiarostami</b></button>
+                            <button class="btn" onclick="filterSelection('itemDesc','wolfLying')" id="wolfLying"><b>A Wolf Lying in Wait</b></button>
+                        </div>
+                        <div class="filterDiv itemDesc Taste-of-Cherry">
+                            <table id="Taste-of-Cherry">
+                                <thead>
+                                    <tr id="trhead">
+                                        <th>Subject</th>
+                                        <th>Predicate</th>
+                                        <th>Object</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>The Poster of the taste of cherry</td>
+                                    <td>dcterms: type</td>
+                                    <td>Image</td>
+                                </tr>
+                                <tr>
+                                    <td>The Poster of the taste of cherry</td>
+                                    <td>dcterms: creator</td>
+                                    <td>Kevin Gaor</td>
+                                </tr>
+                                <tr>
+                                    <td>The Poster of the taste of cherry</td>
+                                    <td>schema: datePublished</td>
+                                    <td>1998</td>
+                                </tr>
+                                <tr>
+                                    <td>The Poster of the taste of cherry</td>
+                                    <td>crm: P72_has_language</td>
+                                    <td>English</td>
+                                </tr>
+                                <tr>
+                                    <td>The Poster of the taste of cherry</td>
+                                    <td>dcterms: spatial</td>
+                                    <td>USA</td>
+                                </tr>
+                                <tr>
+                                    <td>The Poster of the taste of cherry</td>
+                                    <td>crm: P65_shows_visual_item</td>
+                                    <td>Taste of Cherry Movie</td>
+                                </tr>
+                                <tr>
+                                    <td>The Poster of the taste of cherry</td>
+                                    <td>dcterms:alternative</td>
+                                    <td>Le goût de la cerise</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="filterDiv itemDesc Certified-Copy">
+                            <table id="Certified-Copy">
+                                <thead>
+                                    <tr id="trhead">
+                                        <th>Subject</th>
+                                        <th>Predicate</th>
+                                        <th>Object</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>Certified Copy</td>
+                                    <td>schema: type</td>
+                                    <td>Movie</td>
+                                </tr>
+                                <tr>
+                                    <td>Certified Copy</td>
+                                    <td>schema: director</td>
+                                    <td>Abbas Kiarostami</td>
+                                </tr>
+                                <tr>
+                                    <td>Certified Copy</td>
+                                    <td>dcterms: created</td>
+                                    <td>2010</td>
+                                </tr>
+                                <tr>
+                                    <td>Certified Copy</td>
+                                    <td>crm: p108_was_produced_by</td>
+                                    <td>MK2</td>
+                                </tr>
+                                <tr>
+                                    <td>Certified Copy</td>
+                                    <td>schema: ContryOfOrigin</td>
+                                    <td>Italy, France, Belgium</td>
+                                </tr>
+                                <tr>
+                                    <td>Certified Copy</td>
+                                    <td>crm: P72_has_language</td>
+                                    <td>English, French, Italian</td>
+                                </tr>
+                                <tr>
+                                    <td>Certified Copy</td>
+                                    <td>schema: actor</td>
+                                    <td>Juliette Binoche</td>
+                                </tr>
+                                <tr>
+                                    <td>Certified Copy</td>
+                                    <td>schema: genre</td>
+                                    <td>Drama, Romance</td>
+                                </tr>
+                            </table>
+                        </div>
 
+                        <div class="filterDiv itemDesc Signature">
+                            <table id="Signature">
+                                <thead>
+                                    <tr id="trhead">
+                                        <th>Subject</th>
+                                        <th>Predicate</th>
+                                        <th>Object</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>Abbas Kiarostami's Signature</td>
+                                    <td>dcterms: type</td>
+                                    <td>Image</td>
+                                </tr>
+                                <tr>
+                                    <td>Abbas Kiarostami's Signature</td>
+                                    <td>dcterms: created</td>
+                                    <td>Abbas Kiarostami</td>
+                                </tr>
+                                <tr>
+                                    <td>Abbas Kiarostami's Signature</td>
+                                    <td>dcterms: language</td>
+                                    <td>Persian</td>
+                                </tr>
+                                <tr>
+                                    <td>Abbas Kiarostami's Signature</td>
+                                    <td>dcterms: format</td>
+                                    <td>jpg, svg</td>
+                                </tr>
+                                <tr>
+                                    <td>Abbas Kiarostami's Signature</td>
+                                    <td>crm: P43_has_dimension</td>
+                                    <td>525px*220px</td>
+                                </tr>
+                                <tr>
+                                    <td>Abbas Kiarostami's Signature</td>
+                                    <td>schema: datePublished</td>
+                                    <td>2016</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="filterDiv itemDesc Untitled">
+                            <table id="Untitled">
+                                <thead>
+                                    <tr id="trhead">
+                                        <th>Subject</th>
+                                        <th>Predicate</th>
+                                        <th>Object</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>Untitled, 2000</td>
+                                    <td>dcterms: type</td>
+                                    <td>Image</td>
+                                </tr>
+                                <tr>
+                                    <td>Untitled, 2000</td>
+                                    <td>crm: P179_had_sales price</td>
+                                    <td>2322</td>
+                                </tr>
+                                <tr>
+                                    <td>Untitled, 2000</td>
+                                    <td>dcterms: created</td>
+                                    <td>1996</td>
+                                </tr>
+                                <tr>
+                                    <td>Untitled, 2000</td>
+                                    <td>schema: location</td>
+                                    <td>Iran</td>
+                                </tr>
+                                <tr>
+                                    <td>Untitled, 2000</td>
+                                    <td>dcterms: subject</td>
+                                    <td>Abbas Kiarostami</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="filterDiv itemDesc WhereIsKiarostami">
+                            <table id="WhereIsKiarostami">
+                                <thead>
+                                    <tr id="trhead">
+                                        <th>Subject</th>
+                                        <th>Predicate</th>
+                                        <th>Object</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>Where is Kiarostami </td>
+                                    <td>dcterms: type</td>
+                                    <td>Event</td>
+                                </tr>
+                                <tr>
+                                    <td>Where is Kiarostami </td>
+                                    <td>schema: isSubjectOf</td>
+                                    <td>Abbas Kiarostami</td>
+                                </tr>
+                                <tr>
+                                    <td>Where is Kiarostami</td>
+                                    <td>dcterms: date</td>
+                                    <td>2021</td>
+                                </tr>
+                                <tr>
+                                    <td>Where is Kiarostami</td>
+                                    <td>crm: P11_had_participant</td>
+                                    <td>Sylvie Pras, Massoumeh Lahidji</td>
+                                </tr>
+                                <tr>
+                                    <td>Where is Kiarostami</td>
+                                    <td>dcterms: isPartOf</td>
+                                    <td>Cinema Ritrovato Film Festival</td>
+                                </tr>
+                                <tr>
+                                    <td>Where is Kiarostami</td>
+                                    <td>dcterms: spatial</td>
+                                    <td>Bologna</td>
+                                </tr>
+                                <tr>
+                                    <td>Where is Kiarostami</td>
+                                    <td>frbroo: R17</td>
+                                    <td>Cinteca Bologna</td>
+                                </tr>
+                                <tr>
+                                    <td>Where is Kiarostami</td>
+                                    <td>crm: P72_has_language</td>
+                                    <td>French, Italian, English</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="filterDiv itemDesc Lessons-with-Kiarostami">
+                            <table id="Lessons-with-Kiarostami">
+                                <thead>
+                                    <tr id="trhead">
+                                        <th>Subject</th>
+                                        <th>Predicate</th>
+                                        <th>Object</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>Lessons With Kiarostami</td>
+                                    <td>dcterms: creator</td>
+                                    <td>Abbas Kiarostami, Paul Cronin</td>
+                                </tr>
+                                <tr>
+                                    <td>Lessons With Kiarostami</td>
+                                    <td>dcterms: contributor</td>
+                                    <td>Mike Leigh</td>
+                                </tr>
+                                <tr>
+                                    <td>Lessons With Kiarostami</td>
+                                    <td>dcterms: publisher</td>
+                                    <td>Sticking Place Books</td>
+                                </tr>
+                                <tr>
+                                    <td>Lessons With Kiarostami</td>
+                                    <td>schema: datePublished</td>
+                                    <td>2015</td>
+                                </tr>
+                                <tr>
+                                    <td>Lessons With Kiarostami</td>
+                                    <td>frbroo: R6_has_place_of_publication</td>
+                                    <td>New York</td>
+                                </tr>
+                                <tr>
+                                    <td>Lessons With Kiarostami</td>
+                                    <td>schema: genre</td>
+                                    <td>Interviews</td>
+                                </tr>
+                                <tr>
+                                    <td>Lessons With Kiarostami</td>
+                                    <td>crm: P73: has_translation</td>
+                                    <td>Persian</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="filterDiv itemDesc ImageMaker">
+                            <table id="ImageMaker">
+                                <thead>
+                                    <tr id="trhead">
+                                        <th>Subject</th>
+                                        <th>Predicate</th>
+                                        <th>Object</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>Image Maker</td>
+                                    <td>crm: P148_has_component</td>
+                                    <td>Film, photography, and installations</td>
+                                </tr>
+                                <tr>
+                                    <td>Image Maker</td>
+                                    <td>dcterm: date</td>
+                                    <td>from March 1–May 28 and February 11–April 29, 2007</td>
+                                </tr>
+                                <tr>
+                                    <td>Image Maker</td>
+                                    <td>crm: P147_was_curated_by</td>
+                                    <td>Jytte Jensen and Klaus Biesenbach</td>
+                                </tr>
+                                <tr>
+                                    <td>Image Maker</td>
+                                    <td>crm:P7_took_place_at</td>
+                                    <td>MoMA and PS1</td>
+                                </tr>
+                                <tr>
+                                    <td>Image Maker</td>
+                                    <td>dcterms: subject</td>
+                                    <td>Kiarostami's career</td>
+                                </tr>
+                                <tr>
+                                    <td>Image Maker</td>
+                                    <td>schema: location</td>
+                                    <td>New York</td>
+                                </tr>
+                                <tr>
+                                    <td>Image Maker</td>
+                                    <td>crm: P69_has_association_with</td>
+                                    <td>Tehran University's Faculty of Fine Arts</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="filterDiv itemDesc directs">
+                            <table id="directs">
+                                <thead>
+                                    <tr id="trhead">
+                                        <th>Subject</th>
+                                        <th>Predicate</th>
+                                        <th>Object</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>Kiarostami Directs-Portrait</td>
+                                    <td>dcterms: type</td>
+                                    <td>Image</td>
+                                </tr>
+                                <tr>
+                                    <td>Kiarostami Directs-Portrait</td>
+                                    <td>dcterms: creator</td>
+                                    <td>Kaveh Kazemi</td>
+                                </tr>
+                                <tr>
+                                    <td>Kiarostami Directs-Portrait</td>
+                                    <td>dcterms: subject</td>
+                                    <td>Abbass Kiarostami</td>
+                                </tr>
+                                <tr>
+                                    <td>Kiarostami Directs-Portrait</td>
+                                    <td>dcterms: created</td>
+                                    <td>1/10/1996</td>
+                                </tr>
+                                <tr>
+                                    <td>Kiarostami Directs-Portrait</td>
+                                    <td>schema: location</td>
+                                    <td>Tehran,Iran</td>
+                                </tr>
+                                <tr>
+                                    <td>Kiarostami Directs-Portrait</td>
+                                    <td>dcterms: rightsHolder</td>
+                                    <td>Gettyimages</td>
+                                </tr>
+                                <tr>
+                                    <td>Kiarostami Directs-Portrait</td>
+                                    <td>crm: P179_had_sales_price</td>
+                                    <td>475</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="filterDiv itemDesc document">
+                            <table id="document">
+                                <thead>
+                                    <tr id="trhead">
+                                        <th>Subject</th>
+                                        <th>Predicate</th>
+                                        <th>Object</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>76 minutes and 15 Seconds with Abbas Kiarostami</td>
+                                    <td>dcterms: type</td>
+                                    <td>Moving Image</td>
+                                </tr>
+                                <tr>
+                                    <td>76 minutes and 15 Seconds with Abbas Kiarostami</td>
+                                    <td>schema: director</td>
+                                    <td>Seifollah Samadian</td>
+                                </tr>
+                                <tr>
+                                    <td>76 minutes and 15 Seconds with Abbas Kiarostami</td>
+                                    <td>dcterms: created</td>
+                                    <td>2016
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>76 minutes and 15 Seconds with Abbas Kiarostami</td>
+                                    <td>schema: ContryOfOrigin</td>
+                                    <td>Iran</td>
+                                </tr>
+                                <tr>
+                                    <td>76 minutes and 15 Seconds with Abbas Kiarostami</td>
+                                    <td>crm: P72_has_language</td>
+                                    <td>Persian</td>
+                                </tr>
+                                <tr>
+                                    <td>76 minutes and 15 Seconds with Abbas Kiarostami</td>
+                                    <td>dcterms: subject</td>
+                                    <td>Life of Abbas Kiarostami</td>
+                                </tr>
+                                <tr>
+                                    <td>76 minutes and 15 Seconds with Abbas Kiarostami</td>
+                                    <td>schema: genre</td>
+                                    <td>Documentary</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="filterDiv itemDesc wolfLying">
+                            <table id="wolfLying">
+                                <thead>
+                                    <tr id="trhead">
+                                        <th>Subject</th>
+                                        <th>Predicate</th>
+                                        <th>Object</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>A Wolf Lying In Wait</td>
+                                    <td>dcterms:type</td>
+                                    <td>Text</td>
+                                </tr>
+                                <tr>
+                                    <td>A Wolf Lying In Wait</td>
+                                    <td>schema: datePublished</td>
+                                    <td>1999</td>
+                                </tr>
+                                <tr>
+                                    <td>A Wolf Lying In Wait</td>
+                                    <td>crm: P72_has_language</td>
+                                    <td>English, Persian</td>
+                                </tr>
+                                <tr>
+                                    <td>A Wolf Lying In Wait</td>
+                                    <td>dcterms: publisher</td>
+                                    <td>Ali Asghar Elmi</td>
+                                </tr>
+                                <tr>
+                                    <td>A Wolf Lying In Wait</td>
+                                    <td>fabio: has_place_of_publication</td>
+                                    <td>Tehran</td>
+                                </tr>
+                                <tr>
+                                    <td>A Wolf Lying In Wait</td>
+                                    <td>dcterms: publisher</td>
+                                    <td>Sokhan Publication</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
 
                     <!-- ============================= -->
 
