@@ -1,0 +1,212 @@
+@base <https://w3id.org/AbbasKiarostami-LOD/> .
+@prefix DCTERMS: <http://purl.org/dc/terms/> .
+@prefix OWL: <http://www.w3.org/2002/07/owl#> .
+@prefix SCHEMA: <https://schema.org> .
+
+</item/A-Wolf-Lying-in-Wait> DCTERMS:creator "Abbas Kiarostami" ;
+    DCTERMS:identifier "964-372-125-6" ;
+    DCTERMS:publisher "Sokhan" ;
+    DCTERMS:title "A Wolf Lying in Wait" ;
+    SCHEMA:datePublished "2005" ;
+    SCHEMA:editor "Karim Emami",
+        "Michael Beard" ;
+    SCHEMA:url <https://archive.org/details/abbas-kiarostami-epdf-pub-a-wolf-lying-in-wait-selected-poems> .
+
+</person/Abbas-Kiarostami> OWL:sameAs <https://viaf.org/viaf/114753296/> ;
+    SCHEMA:birthDate "22 June 1940" ;
+    SCHEMA:deathDate "4 July 2016" .
+
+</place/Tehran> OWL:sameAs <https://dbpedia.org/page/Tehran>,
+        <https://www.geonames.org/112931/tehran.html> .
+
+<poem/1> DCTERMS:language "en" ;
+    SCHEMA:genre "free verse" ;
+    SCHEMA:text "A red dotted line on the white snow",
+        "limping away.",
+        "wounded game" .
+
+<poem/10> DCTERMS:language "en" ;
+    SCHEMA:genre "free verse" ;
+    SCHEMA:text "Night",
+        "sea",
+        "winter." .
+
+<poem/11> DCTERMS:language "en" ;
+    SCHEMA:genre "free verse" ;
+    SCHEMA:text "The glow of the harvest moon",
+        "made the glass tremble.",
+        "upon the window" .
+
+<poem/12> DCTERMS:language "en" ;
+    SCHEMA:genre "free verse" ;
+    SCHEMA:text "I get up and close the windows.",
+        "When I think of the flowers",
+        "a wind blows so cold" .
+
+<poem/13> DCTERMS:language "en" ;
+    SCHEMA:genre "free verse" ;
+    SCHEMA:text "At the earliest assault of the autumn wind",
+        "a horde of leaves",
+        "seeks asylum in my room." .
+
+<poem/14> DCTERMS:language "en" ;
+    SCHEMA:genre "free verse" ;
+    SCHEMA:text "I dream",
+        "My body germinates.",
+        "that I am buried",
+        "under the autumn leaves." .
+
+<poem/15> DCTERMS:language "en" ;
+    SCHEMA:genre "free verse" ;
+    SCHEMA:text "Two autumn leaves",
+        "hanging on the clothesline.",
+        "have hidden themselves",
+        "in my shirtsleeves" .
+
+<poem/2> DCTERMS:language "en" ;
+    SCHEMA:genre "free verse" ;
+    SCHEMA:text "A white foal",
+        "at first light.",
+        "to a black mare",
+        "was bom" .
+
+<poem/3> DCTERMS:language "en" ;
+    SCHEMA:genre "free verse" ;
+    SCHEMA:text "The wind will carry",
+        "the cherry blossoms away",
+        "to the white of the clouds." .
+
+<poem/4> DCTERMS:language "en" ;
+    SCHEMA:genre "free verse" ;
+    SCHEMA:text "After every cresting wave",
+        "after every three wavelets",
+        "another cresting wave.",
+        "three wavelets" .
+
+<poem/5> DCTERMS:language "en" ;
+    SCHEMA:genre "free verse" ;
+    SCHEMA:text "I drank some wine and fell asleep.",
+        "I escorted",
+        "down to the heart of a dark cloud.",
+        "the moon" .
+
+<poem/6> DCTERMS:language "en" ;
+    SCHEMA:genre "free verse" ;
+    SCHEMA:text "The moon grows pale",
+        "The star vanishes",
+        "as the cock crows.",
+        "at dawn." .
+
+<poem/7> DCTERMS:language "en" ;
+    SCHEMA:genre "free verse" ;
+    SCHEMA:text "As the air grew dark",
+        "the scent of gillyflowers filled the air." .
+
+<poem/8> DCTERMS:language "en" ;
+    SCHEMA:genre "free verse" ;
+    SCHEMA:text "A bird",
+        "even to the birds.",
+        "sings in the middle of the night;",
+        "unfamiliar" .
+
+<poem/9> DCTERMS:language "en" ;
+    SCHEMA:genre "free verse" ;
+    SCHEMA:text "A scarecrow",
+        "hatless and coatless",
+        "in a cold winter night." .
+
+<poem/۱> DCTERMS:language "fa" ;
+    SCHEMA:genre "free verse" ;
+    SCHEMA:text ".لنگ‌لنگان",
+        "خط سرخی بر سفیدی برف",
+        "شکاری زخمی" .
+
+<poem/۱۰> DCTERMS:language "fa" ;
+    SCHEMA:genre "free verse" ;
+    SCHEMA:text "دریا",
+        "زمستان.",
+        "شب" .
+
+<poem/۱۱> DCTERMS:language "fa" ;
+    SCHEMA:genre "free verse" ;
+    SCHEMA:text "بر روی پنجره",
+        "تابش اولین مهتاب پاییزی",
+        "شیشه‌ها را می‌لرزاند." .
+
+<poem/۱۲> DCTERMS:language "fa" ;
+    SCHEMA:genre "free verse" ;
+    SCHEMA:text "باد سرد می‌وزد،",
+        "برمی‌خیزم پنجره را می‌بندم.",
+        "به گل‌ها که فکر می‌کنم" .
+
+<poem/۱۳> DCTERMS:language "fa" ;
+    SCHEMA:genre "free verse" ;
+    SCHEMA:text "به اتاقم پناه گرفتند.",
+        "در اولین هجوم باد پاییزی",
+        "فوجی از برگ‌ها" .
+
+<poem/۱۴> DCTERMS:language "fa" ;
+    SCHEMA:genre "free verse" ;
+    SCHEMA:text "جوانه می‌زنم تند",
+        "خواب می‌بینم",
+        "زیر برگ‌های پاییزی",
+        "مدفونم" .
+
+<poem/۱۵> DCTERMS:language "fa" ;
+    SCHEMA:genre "free verse" ;
+    SCHEMA:text "بر بند رخت.",
+        "در آستین پیراهنم",
+        "دو برگ پاییزی",
+        "مخفی کرده‌اند خود را" .
+
+<poem/۲> DCTERMS:language "fa" ;
+    SCHEMA:genre "free verse" ;
+    SCHEMA:text "از ماده اسبی سیاه",
+        "در آغاز سپیده‌دم.",
+        "زاده شد",
+        "کره اسبی سفید" .
+
+<poem/۳> DCTERMS:language "fa" ;
+    SCHEMA:genre "free verse" ;
+    SCHEMA:text "باد با خود خواهد برد",
+        "تا سپیدی ابرها.",
+        "شکوفه‌های گیلاس را" .
+
+<poem/۴> DCTERMS:language "fa" ;
+    SCHEMA:genre "free verse" ;
+    SCHEMA:text "در پس هر سه موج کوتاه",
+        "در پس هر موج بلند",
+        "سه موج کوتاه",
+        "یک موج بلند" .
+
+<poem/۵> DCTERMS:language "fa" ;
+    SCHEMA:genre "free verse" ;
+    SCHEMA:text "بدرقه کردم",
+        "تا دلِ ابری تیره،",
+        "شراب خوردم و خفتم.",
+        "ماه را" .
+
+<poem/۶> DCTERMS:language "fa" ;
+    SCHEMA:genre "free verse" ;
+    SCHEMA:text "از بانگ خروس",
+        "در سپیده‌دم.",
+        "رنگ می‌بازد ماه",
+        "ستاره ناپدید می‌شود" .
+
+<poem/۷> DCTERMS:language "fa" ;
+    SCHEMA:genre "free verse" ;
+    SCHEMA:text "بوی شب‌بو پیچید.",
+        "هوا که تاریک شد" .
+
+<poem/۸> DCTERMS:language "fa" ;
+    SCHEMA:genre "free verse" ;
+    SCHEMA:text "حتی برای پرندگان.",
+        "می‌خواندنیمه‌های شب،",
+        "نا آشنا",
+        "پرنده‌ای" .
+
+<poem/۹> DCTERMS:language "fa" ;
+    SCHEMA:genre "free verse" ;
+    SCHEMA:text "در شب زمستان سرد.",
+        "مترسکی بی‌بالاپوش" .
+

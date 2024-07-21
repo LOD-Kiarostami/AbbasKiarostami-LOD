@@ -1,15 +1,22 @@
-<TEI xmlns="http://tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiheader>
         <fileDesc>
             <titleStmt>
                 <title>Selected Poems by Abbas Kiarostami: digital edition</title>
-                <author>Abbas Kiarostami</author>                
+                <author>
+                    <persName>
+                        <forename>Abbas</forename>
+                        <surname>Kiarostami</surname>
+                    </persName>
+                    <idno type="VIAF">https://viaf.org/viaf/114753296/</idno>
+                
+                </author>                
             </titleStmt>
             <editionStmt>
                 <edition>A student edition <date>July 2024</date></edition>
                 <respStmt>
                     <resp>annotations by</resp>
-                    <name>Ahmadreza Nazari</name>
+                    <name>Ahmadreza Nazari, Nazanin Fakharian, Zahra Faraji</name>
                 </respStmt>
             </editionStmt>
 
@@ -26,13 +33,31 @@
                 <bibl type="book">
                     <title lang="en">A Wolf Lying in Wait</title>
                     <subTitle>Selected Poems</subTitle>
-                    <author>Abbas Kiarostami</author>
+                    <author>
+                        <persName>
+                            <forename>Abbas</forename>
+                            <surname>Kiarostami</surname>
+                        </persName>
+                        <idno type="VIAF">https://viaf.org/viaf/114753296/</idno>
+                        <birth when="1940-06-22">22 June 1940</birth>
+                        <death when="2016-07-04">4 July 2016</death>
+                    </author>
                     <title lang="fa">گرگی در کمین</title>
-                    <editor role="translator">Karim Emami</editor>
+                    <editor role="translator">
+                        <persName>Karim Emami</persName>
+                        <idno type="DBpedia">https://dbpedia.org/page/Karim_Emami</idno>
+                    </editor>
+
                     <editor role="translator">Michael Beard</editor>
                     <publisher>Sokhan</publisher>
-                    <pubPlace>Tehran</pubPlace>
+                    <pubPlace>
+                        <placeName>Tehran</placeName>
+                        <idno type="GeoNames">https://www.geonames.org/112931/tehran.html</idno>
+                        <idno type="DBpedia">https://dbpedia.org/page/Tehran</idno>
+                    </pubPlace>
                     <date>2005</date>
+                    <idno type="ISBN">964-372-125-6</idno>
+                    <ptr target="https://archive.org/details/abbas-kiarostami-epdf-pub-a-wolf-lying-in-wait-selected-poems"/>
                 </bibl>
             </sourceDesc>
 

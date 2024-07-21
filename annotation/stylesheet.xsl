@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:tei="http://tei-c.org/ns/1.0">
+    xmlns:tei="http://www.tei-c.org/ns/1.0">
 
     <xsl:template match="/">
         <html>
             <head>
-                <title><xsl:value-of select="/tei:TEI/tei:teiheader/tei:fileDesc/tei:titleStmt/tei:title"/></title>
+                <title><xsl:value-of select=".//tei:titleStmt/tei:title"/></title>
             </head>
             <body>
                 <h1>A Wolf Lying in Wait</h1>
@@ -22,7 +22,7 @@
                     Ahmadreza Nazari</p>
                 </div>
                 <h2>Selected Poems</h2>
-                <xsl:for-each select="/tei:TEI/tei:text/tei:body/tei:div">
+                <xsl:for-each select=".//tei:body/tei:div">
                     <xsl:choose>
                         <xsl:when test="@type='translation of poem'">
                             <h3>(<xsl:value-of select="@n"/>)</h3>
