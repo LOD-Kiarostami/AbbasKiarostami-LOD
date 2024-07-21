@@ -11154,7 +11154,7 @@ section {
 }
 
 #mailbutton {
-    color: #cda24c;
+    color: #b4bca3;
     font-size: 48px;
 }
 
@@ -11223,7 +11223,7 @@ section {
 
 .parallax3 {
     /* The image used */
-    background-image: url("imgpx/p3.jpg");
+    background-image: url("images/bg-2.jpg");
     /* Full height */
     min-height: 400px;
     /* Height of the image section */
