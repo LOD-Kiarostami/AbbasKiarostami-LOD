@@ -79,7 +79,7 @@
                             will be so shocked that you will likely howl out loud, albeit joyfully."</i>
                             <br><i style="font-size: smaller;">Mike Leigh</i>
                             <br><br> Abbas Kiarostami was a pioneering Iranian filmmaker, photographer, and poet, recognized for his profound influence on contemporary Iranian cinema. Born on June 22, 1940, in Tehran, Kiarostami gained international acclaim
-                            in the 1990s with <i>"Close-Up,"</i> known for his minimalist style and exploration of existential themes and human relationships.
+                            in the 1990s with <i>Close-Up, 1990</i> known for his minimalist style and exploration of existential themes and human relationships.
                             <br> He revolutionized storytelling with unconventional narrative structures, long takes, and naturalistic performances, often blending fiction and reality. His films, rich in universal themes like love and loss, used subtle
                             gestures to evoke deep emotional responses.
                             <br> Kiarostami's work extended to photography and poetry, integrating his visual and literary passions into his films. culture. His innovative approach and commitment to the human condition have left a lasting impact on global
@@ -193,6 +193,9 @@
                     <br>
                     <div class="img-magnifier-container">
                         <img id="myimage" src="images/ConceptualMap.jpg" alt="Conceptual Map" style="max-width:100%;max-height:100%; border: 2px solid #b4bca3;"></div>
+                    <!--zoom img-->
+                    <a href="images/conceptualMap.jpg" target="blank"><button
+                        class="newtabmyBtn">Zoom Image</button></a>
                     <br><br><br>
                     <h2 id="erm" class="sectitle " style="font-size: 20pt; ">E/R Model</h2>
                     <br>
@@ -200,6 +203,9 @@
                         are depicted as Relationships.</p>
                     <br>
                     <div class="img-magnifier-container "> <img id="myimage" src="images/ERModel.jpg " alt="E/R Model " style="max-width:100%;max-height:100%; border: 2px solid #b4bca3;"></div>
+                    <!--zoom img-->
+                    <a href="images/ERModel.jpg" target="blank"><button
+                        class="newtabmyBtn">Zoom Image</button></a>
                     <br style="margin-top:10px; ">
                     <br><br>
                     <hr class="bookends ">
@@ -271,7 +277,7 @@
                             <td>CDWA</td>
                         </tr>
                         <tr>
-                            <td class="td1">76 Minutes 76 minutes and 15 seconds with Abbas Kiarostami</td>
+                            <td class="td1">76 Minutes and 15 seconds with Abbas Kiarostami</td>
                             <td>Movie</td>
                             <td>IMDB</td>
                             <td>Schema.org</td>
@@ -293,10 +299,10 @@
 
                 <div id="myBtnContainer" class="metaAlignBtn col-lg-10">
                     <!-- Buttons for the filtering with the 4W-->
-                    <button class="btn active" onclick="filterSelection('metaAlign','who')" id="who">WHO</button>
-                    <button class="btn" onclick="filterSelection('metaAlign','what')" id="what">WHAT</button>
-                    <button class="btn" onclick="filterSelection('metaAlign','where')" id="where">WHERE</button>
-                    <button class="btn" onclick="filterSelection('metaAlign','when')" id="when">WHEN</button>
+                    <button class="btn active" onclick="filterSelection('metaAlign','who', this)" id="who"><b>WHO</b></button>
+                    <button class="btn" onclick="filterSelection('metaAlign','what', this)" id="what"><b>WHAT</b></button>
+                    <button class="btn" onclick="filterSelection('metaAlign','where', this)" id="where"><b>WHERE</b></button>
+                    <button class="btn" onclick="filterSelection('metaAlign','when', this)" id="when"><b>WHEN</b></button>
                 </div>
                 <div class="filterDiv metaAlign who col-lg-10">
                     <!-- WHO CONTENT -->
@@ -316,10 +322,10 @@
                         <tr>
                             <td class="td1">Creator</td>
                             <td>schema: creator</td>
-                            <td>Creator Display (specify Creator Extent, Creator Role)</td>
+                            <td>Creator Display</td>
                             <td>dcterms: creator</td>
-                            <td>P24 has creator</td>
-                            <td>P50 author</td>
+                            <td>crm: P24 has creator</td>
+                            <td>wdt: P50 author</td>
                             <td>100</td>
                             <td>frbroo: R17</td>
                         </tr>
@@ -328,9 +334,8 @@
                             <td>schema: contributor</td>
                             <td>4.1.1. CREATOR EXTENT</td>
                             <td>dcterms: contributor</td>
-                            <td>crm: P69_has_association_with</td>
-                            <td>P767 contributor to the creative work or subject</td>
-
+                            <td>crm: P69 has association with</td>
+                            <td>wdt: P767 contributor to the creative work or subject</td>
                             <td>700</td>
                             <td>frbroo: R17 </td>
                         </tr>
@@ -349,8 +354,8 @@
                             <td>schema: publisher</td>
                             <td>27.2.2.6. SOURCE PUBLISHER</td>
                             <td>dcterms: publisher</td>
-                            <td>P14 carried out by</td>
-                            <td>P123 Publisher</td>
+                            <td>crm: P14 carried out by</td>
+                            <td>wdt: P123 Publisher</td>
                             <td>260</td>
                             <td>frbroo: R19</td>
                         </tr>
@@ -359,8 +364,8 @@
                             <td>schema: actor</td>
                             <td>N/A</td>
                             <td>dcterms: contributor</td>
-                            <td>E39 Actor</td>
-                            <td>P161 Cast member</td>
+                            <td>crm: E39 Actor</td>
+                            <td>wdt: P161 Cast member</td>
                             <td>700 $e</td>
                             <td>N/A</td>
                         </tr>
@@ -370,7 +375,7 @@
                             <td>27.2.2.4. SOURCE EDITOR/COMPILER</td>
                             <td>N/A</td>
                             <td>N/A</td>
-                            <td>P665 translator</td>
+                            <td>wdt: P665 translator</td>
                             <td>700 $e</td>
                             <td>frbroo: R31</td>
                         </tr>
@@ -380,7 +385,7 @@
                             <td>4.1.4. Creator Role</td>
                             <td>N/A</td>
                             <td>N/A</td>
-                            <td>P57 director</td>
+                            <td>wdt: P57 director</td>
                             <td>N/A</td>
                             <td>N/A</td>
                         </tr>
@@ -406,8 +411,8 @@
                             <td>schema: type</td>
                             <td>Work Type</td>
                             <td>dcterms: type</td>
-                            <td>P2 has type</td>
-                            <td>P1163 media type</td>
+                            <td>crm: P2 has type</td>
+                            <td>wdt: P1163 media type</td>
                             <td>336</td>
                             <td>frbroo:CLP2</td>
                         </tr>
@@ -416,9 +421,9 @@
                             <td>schema: identifier</td>
                             <td>*21.2.3. Repository Number</td>
                             <td>dcterm: identifier</td>
-                            <td>P1 identifies</td>
-                            <td>P356 DOI</td>
-                            <td>020: (ISSN)</td>
+                            <td>crm: P1 identifies</td>
+                            <td>wdt: P356 DOI</td>
+                            <td>020</td>
                             <td>frbroo: F13 Identifier</td>
                         </tr>
                         <tr>
@@ -427,7 +432,7 @@
                             <td>N/A</td>
                             <td>dcterms: type</td>
                             <td>N/A</td>
-                            <td>P136 genre</td>
+                            <td>wdt: P136 genre</td>
                             <td>655 Index Term-Genre/Form </td>
                             <td>N/A</td>
                         </tr>
@@ -436,8 +441,8 @@
                             <td>schema: subjectOf</td>
                             <td>31.2. Subject Name</td>
                             <td>dcterms: subject</td>
-                            <td>P129 is subject of</td>
-                            <td>P921 main subject P180 depicts</td>
+                            <td>crm: P129 is subject of</td>
+                            <td>wdt: P921 main subject P180 depicts</td>
                             <td>76xx</td>
                             <td>frbroo: R59 had typical subject</td>
                         </tr>
@@ -446,8 +451,8 @@
                             <td>schema: inLanguage</td>
                             <td>Language</td>
                             <td>dcterms: language</td>
-                            <td>crm: P72_has_language</td>
-                            <td>P407 language of</td>
+                            <td>crm: P72 has language</td>
+                            <td>wdt: P407 language of</td>
                             <td>377</td>
                             <td>frbroo: R60 used</td>
                         </tr>
@@ -456,8 +461,8 @@
                             <td>schema: translationOfWork</td>
                             <td>N/A</td>
                             <td>N/A</td>
-                            <td>crm:p73: has translation</td>
-                            <td>P747 has edition or translation</td>
+                            <td>crm:p73 has translation</td>
+                            <td>wdt: P73 translation</td>
                             <td>767 Translation Entry</td>
                             <td>frbroo: R31</td>
                         </tr>
@@ -472,31 +477,21 @@
                             <td>frbroo: CLP43</td>
                         </tr>
                         <tr>
-                            <td class="td1">Children</td>
+                            <td class="td1">Includes/in included in</td>
                             <td>schema: isPartOf</td>
                             <td>N/A</td>
                             <td>dcterm: isPartOf</td>
-                            <td>crm: P148 has component / schema:includes</td>
-                            <td>P179 Part of series</td>
-                            <td>762 Subseries Entry</td>
-                            <td>N/A</td>
-                        </tr>
-                        <tr>
-                            <td class="td1">Parent</td>
-                            <td>N/A</td>
-                            <td>N/A</td>
-                            <td>N/A</td>
-                            <td>P152 has parent (is parent of)</td>
-                            <td>N/A</td>
-                            <td>772 Supplement Parent Entry</td>
-                            <td>frbroo: R15i</td>
+                            <td>crm:P148 has component / crm:P152 has parent</td>
+                            <td>wdt: P179 Part of series / P1433 published in</td>
+                            <td>762 Subseries Entry/ 772 Supplement Parent Entry</td>
+                            <td>frbroo:R15i</td>
                         </tr>
                         <tr>
                             <td class="td1">Price</td>
                             <td>N/A</td>
                             <td>23.3. COST OR VALUE</td>
                             <td>N/A</td>
-                            <td>P179 had sales price</td>
+                            <td>crm: P179 had sales price</td>
                             <td>N/A</td>
                             <td>020 $c</td>
                             <td>frbroo: E97 Monetary Amount</td>
@@ -507,7 +502,7 @@
                             <td>*22.1. Copyrights Satement</td>
                             <td>dcterms: Rights</td>
                             <td>N/A</td>
-                            <td>P275 copyright license</td>
+                            <td>wdt: P275 copyright license</td>
                             <td>264 $c</td>
                             <td>frbroo: CLP104</td>
                         </tr>
@@ -517,7 +512,7 @@
                             <td>N/A</td>
                             <td>dc: format</td>
                             <td>crm: P2 has type</td>
-                            <td>p437 distribution format</td>
+                            <td>wdt: P437 distribution format</td>
                             <td>338 Carrier Type</td>
                             <td>N/A</td>
                         </tr>
@@ -543,9 +538,9 @@
                             <td>schema: contentLocation</td>
                             <td>27.2.2.5. Source Publication Place</td>
                             <td>dcterms: coverage</td>
-                            <td>E53 Place</td>
-                            <td>P1071 location of creation</td>
-                            <td>264 $a: (Publication, distribution)</td>
+                            <td>crm: E53 Place</td>
+                            <td>wdt: P1071 location of creation</td>
+                            <td>264 $a</td>
                             <td>frbroo: R6</td>
                         </tr>
                         <tr>
@@ -553,8 +548,8 @@
                             <td>schema: location/ schema: ContryOfOrigin</td>
                             <td>29.2. Place Name</td>
                             <td>dcterms: spatial</td>
-                            <td>crm: P7_took_place_at</td>
-                            <td>P291 place of publication</td>
+                            <td>crm: P7 took place at</td>
+                            <td>wdt: P291 place of publication</td>
                             <td>752</td>
                             <td>frbroo: R25i was performed in</td>
                         </tr>
@@ -581,9 +576,9 @@
                             <td>schema: datePublished</td>
                             <td>27.2.2.7. Source Publication Year</td>
                             <td>dcterms: available</td>
-                            <td>E12 Production</td>
-                            <td>P577 publication date P1191 date of first performance</td>
-                            <td>264 - Production, Publication, Distribution, Manufacture, and Copyright Notice - $c date of production</td>
+                            <td>crm: E12 Production</td>
+                            <td>wdt: P577 publication date P1191 date of first performance</td>
+                            <td>264$c</td>
                             <td>frbroo: R23 has date of production</td>
                         </tr>
                         <tr>
@@ -591,8 +586,8 @@
                             <td>schema: dateCreated</td>
                             <td>4.2. Creation Date</td>
                             <td>dcterms: created</td>
-                            <td>E12 Production</td>
-                            <td>P2754 production date</td>
+                            <td>crm: E12 Production</td>
+                            <td>wdt: P2754 production date</td>
                             <td>500</td>
                             <td>frbroo: R12 has date of creation</td>
                         </tr>
@@ -601,8 +596,8 @@
                             <td>schema: duration</td>
                             <td>N/A</td>
                             <td>dcterm: SizeOrDuration</td>
-                            <td>crm:P4_has_time-span</td>
-                            <td>P2047 Duration</td>
+                            <td>crm:P4 has time-span</td>
+                            <td>wdt: P2047 Duration</td>
                             <td>306 Playing Time</td>
                             <td>N/A</td>
                         </tr>
@@ -626,17 +621,36 @@
                             </ul>
                         </p>
                         <div class="img-magnifier-container"> <img id="myimage2" src="images/theoratical.jpg" alt="Theoretical Model" style="max-width:100%;max-height:100%; border: 1px solid rgb(0, 0, 0);"></div>
+                        <!--zoom img-->
+                        <a href="images/theoratical.jpg" target="blank"><button
+                        class="newtabmyBtn">Zoom Image</button></a>
                         <br>
                         <h2 id="eerm" class="sectitle" style="font-size: 20pt;">Enhanced E/R Model</h2>
                         <p style="text-align:justify;">The Theoretical Model, initially developed in natural language, is subsequently transformed into an Enhanced Entity/Relationship (E/R) Model. This refined version builds upon the previous E/R Model, incorporating the enhancements
                             made during later stages of development.</p>
                         <div class="img-magnifier-container"> <img id="myimage5" src="images/enhanced.jpg" alt="Enhanced E/R Model" style="max-width:100%; max-height:100%; border: 1px solid rgb(0, 0, 0);"></div>
+                        <!--zoom img-->
+                        <a href="images/enhanced.jpg" target="blank"><button
+                        class="newtabmyBtn">Zoom Image</button></a>
 
                         <br>
                         <h2 id="cm" class="sectitle" style="font-size: 20pt;">Conceptual Model</h2>
                         <p style="text-align:justify;">A heightened level of abstraction is achieved in this phase, as we transition from the theoretical model to the formal representation offered by the Conceptual Model. Here, an ontological methodology guides us, where subjects and
                             relationships outlined in the theoretical model are restructured using appropriate classes and properties derived from existing schemas, vocabularies, and ontologies.
+                            <br><br> These are the ontologies that we used:
+                            <ul>
+                                <li>crm: http://www.cidoc-crm.org/cidoc-crm/</li>
+                                <li>dbo: http://dbpedia.org/ontology/</li>
+                                <li>dcterms: http://purl.org/dc/terms/</li>
+                                <li>frbroo: http://iflastandards.info/ns/fr/frbroo/</li>
+                                <li>owl: http://www.w3.org/2002/07/owl#</li>
+                                <li>rdfs: http://www.w3.org/2000/01/rdf-schema#</li>
+                                <li>schema: https://schema.org/</li>
+                                <li>time: http://www.w3.org/2006/time#</li>
+                            </ul>
+                            <br>
                         </p>
+
                         <div class="img-magnifier-container"> <img id="myimage3" src="images/conceptual.jpg" alt="Conceptual Model" style="max-width:100%;max-height:100%; border: 1px solid rgb(0, 0, 0);"></div>
                         <!--zoom img-->
                         <a href="images/conceptual.jpg" target="blank"><button
@@ -661,16 +675,16 @@
                     <!-- the table -->
                     <div class="container">
                         <div id="myBtnContainer" class="itemDescBtn">
-                            <button class="btn active" onclick="filterSelection('itemDesc', 'Taste-of-Cherry')" id="Taste-of-Cherry"><b>Taste of Cherry</b></button>
-                            <button class="btn" onclick="filterSelection('itemDesc','Certified-Copy')" id="Certified-Copy"><b>Certified Copy</b></button>
-                            <button class="btn" onclick="filterSelection('itemDesc','Signature')" id="Signature"><b>Signature</b></button>
-                            <button class="btn" onclick="filterSelection('itemDesc','Untitled')" id="Untitled"><b>Untitled,2000</b></button>
-                            <button class="btn" onclick="filterSelection('itemDesc','WhereIsKiarostami')" id="WhereIsKiarostami"><b>Where Is Kiarostami</b></button>
-                            <button class="btn" onclick="filterSelection('itemDesc','Lessons-with-Kiarostami')" id="Lessons-with-Kiarostami"><b>Lessons with Kiarostami</b></button>
-                            <button class="btn" onclick="filterSelection('itemDesc','ImageMaker')" id="ImageMaker"><b>Kiarostami: Image Maker</b></button>
-                            <button class="btn" onclick="filterSelection('itemDesc','directs')" id="directs"><b>Kiarostami Directs</b></button>
-                            <button class="btn" onclick="filterSelection('itemDesc','document')" id="document"><b>76 Minutes and 15 seconds</b></button>
-                            <button class="btn" onclick="filterSelection('itemDesc','wolfLying')" id="wolfLying"><b>A Wolf Lying in Wait</b></button>
+                            <button class="btn active" onclick="filterSelection('itemDesc', 'Taste-of-Cherry',this)" id="Taste-of-Cherry"><b>Taste of Cherry</b></button>
+                            <button class="btn" onclick="filterSelection('itemDesc','Certified-Copy',this)" id="Certified-Copy"><b>Certified Copy</b></button>
+                            <button class="btn" onclick="filterSelection('itemDesc','Signature',this)" id="Signature"><b>Signature</b></button>
+                            <button class="btn" onclick="filterSelection('itemDesc','Untitled',this)" id="Untitled"><b>Untitled,2000</b></button>
+                            <button class="btn" onclick="filterSelection('itemDesc','WhereIsKiarostami',this)" id="WhereIsKiarostami"><b>Where Is Kiarostami</b></button>
+                            <button class="btn" onclick="filterSelection('itemDesc','Lessons-with-Kiarostami',this)" id="Lessons-with-Kiarostami"><b>Lessons with Kiarostami</b></button>
+                            <button class="btn" onclick="filterSelection('itemDesc','ImageMaker',this)" id="ImageMaker"><b>Kiarostami: Image Maker</b></button>
+                            <button class="btn" onclick="filterSelection('itemDesc','directs',this)" id="directs"><b>Kiarostami Directs</b></button>
+                            <button class="btn" onclick="filterSelection('itemDesc','document',this)" id="document"><b>76 Minutes and 15 seconds</b></button>
+                            <button class="btn" onclick="filterSelection('itemDesc','wolfLying',this)" id="wolfLying"><b>A Wolf Lying in Wait</b></button>
                         </div>
                         <div class="filterDiv itemDesc Taste-of-Cherry">
                             <table id="Taste-of-Cherry">
@@ -683,7 +697,7 @@
                                 </thead>
                                 <tr>
                                     <td>The Poster of the taste of cherry</td>
-                                    <td>dcterms: type</td>
+                                    <td>rdf: type</td>
                                     <td>Image</td>
                                 </tr>
                                 <tr>
@@ -716,6 +730,11 @@
                                     <td>dcterms:alternative</td>
                                     <td>Le goût de la cerise</td>
                                 </tr>
+                                <tr>
+                                    <td>The Poster of the taste of cherry</td>
+                                    <td>crm: P90_has_value</td>
+                                    <td>195</td>
+                                </tr>
                             </table>
                         </div>
                         <div class="filterDiv itemDesc Certified-Copy">
@@ -729,7 +748,7 @@
                                 </thead>
                                 <tr>
                                     <td>Certified Copy</td>
-                                    <td>schema: type</td>
+                                    <td>rdf: type</td>
                                     <td>Movie</td>
                                 </tr>
                                 <tr>
@@ -760,7 +779,7 @@
                                 <tr>
                                     <td>Certified Copy</td>
                                     <td>schema: actor</td>
-                                    <td>Juliette Binoche</td>
+                                    <td>Juliette Binoche, William Shimell</td>
                                 </tr>
                                 <tr>
                                     <td>Certified Copy</td>
@@ -781,7 +800,7 @@
                                 </thead>
                                 <tr>
                                     <td>Abbas Kiarostami's Signature</td>
-                                    <td>dcterms: type</td>
+                                    <td>rdf: type</td>
                                     <td>Image</td>
                                 </tr>
                                 <tr>
@@ -822,7 +841,7 @@
                                 </thead>
                                 <tr>
                                     <td>Untitled, 2000</td>
-                                    <td>dcterms: type</td>
+                                    <td>rdf: type</td>
                                     <td>Image</td>
                                 </tr>
                                 <tr>
@@ -858,7 +877,7 @@
                                 </thead>
                                 <tr>
                                     <td>Where is Kiarostami </td>
-                                    <td>dcterms: type</td>
+                                    <td>rdf: type</td>
                                     <td>Event</td>
                                 </tr>
                                 <tr>
@@ -907,6 +926,11 @@
                                         <th>Object</th>
                                     </tr>
                                 </thead>
+                                <tr>
+                                    <td>Lessons With Kiarostami</td>
+                                    <td>rdf: type</td>
+                                    <td>Text</td>
+                                </tr>
                                 <tr>
                                     <td>Lessons With Kiarostami</td>
                                     <td>dcterms: creator</td>
@@ -960,13 +984,13 @@
                                 </tr>
                                 <tr>
                                     <td>Image Maker</td>
-                                    <td>dcterm: date</td>
+                                    <td>crm:P4_has_time-span</td>
                                     <td>from March 1–May 28 and February 11–April 29, 2007</td>
                                 </tr>
                                 <tr>
                                     <td>Image Maker</td>
                                     <td>crm: P147_was_curated_by</td>
-                                    <td>Jytte Jensen and Klaus Biesenbach</td>
+                                    <td>Jytte Jensen, Klaus Biesenbach and Iranian Art Foundation</td>
                                 </tr>
                                 <tr>
                                     <td>Image Maker</td>
@@ -1001,7 +1025,7 @@
                                 </thead>
                                 <tr>
                                     <td>Kiarostami Directs-Portrait</td>
-                                    <td>dcterms: type</td>
+                                    <td>rdf: type</td>
                                     <td>Image</td>
                                 </tr>
                                 <tr>
@@ -1047,7 +1071,7 @@
                                 </thead>
                                 <tr>
                                     <td>76 minutes and 15 Seconds with Abbas Kiarostami</td>
-                                    <td>dcterms: type</td>
+                                    <td>rdf: type</td>
                                     <td>Moving Image</td>
                                 </tr>
                                 <tr>
@@ -1060,6 +1084,11 @@
                                     <td>dcterms: created</td>
                                     <td>2016
                                     </td>
+                                </tr>
+                                <tr>
+                                    <td>76 minutes and 15 Seconds with Abbas Kiarostami</td>
+                                    <td>crm: P108_was_produced_by</td>
+                                    <td>Tassvir Film Center</td>
                                 </tr>
                                 <tr>
                                     <td>76 minutes and 15 Seconds with Abbas Kiarostami</td>
@@ -1094,7 +1123,7 @@
                                 </thead>
                                 <tr>
                                     <td>A Wolf Lying In Wait</td>
-                                    <td>dcterms:type</td>
+                                    <td>rdf:type</td>
                                     <td>Text</td>
                                 </tr>
                                 <tr>
@@ -1114,7 +1143,8 @@
                                 </tr>
                                 <tr>
                                     <td>A Wolf Lying In Wait</td>
-                                    <td>fabio: has_place_of_publication</td>
+                                    <td>frbroo:R6_has_place_of_publication
+                                    </td>
                                     <td>Tehran</td>
                                 </tr>
                                 <tr>
@@ -1133,6 +1163,8 @@
                         ontologies were defined, and triples were constructed using Turtle serialization. These triples emphasized relationships among the items and their entities, aiming to link with other relevant resources and authorities wherever
                         feasible.
                     </p>
+
+
                     <p>https://w3id.org/AbbasKiarostami-LOD<br> https://w3id.org/AbbasKiarostami-LOD/item/poster-taste-of-cherry
                         <br> https://w3id.org/AbbasKiarostami-LOD/item/where-is-kiarostami
                         <br> https://w3id.org/AbbasKiarostami-LOD/item/certified-copy
@@ -1144,23 +1176,49 @@
                         <br> https://w3id.org/AbbasKiarostami-LOD/place/france
                         <br> https://w3id.org/AbbasKiarostami-LOD/place/belgium
                         <br>
+                        <br> https://w3id.org/AbbasKiarostami-LOD/language/english
+                        <br> https://w3id.org/AbbasKiarostami-LOD/language/persian
+                        <br> https://w3id.org/AbbasKiarostami-LOD/language/french
+                        <br> https://w3id.org/AbbasKiarostami-LOD/language/italian
+                        <br>
                         <br> https://w3id.org/AbbasKiarostami-LOD/date/21july2021
+                        <br> https://w3id.org/AbbasKiarostami-LOD/date/4july2016
+                        <br> https://w3id.org/AbbasKiarostami-LOD/date/2010
                         <br> https://w3id.org/AbbasKiarostami-LOD/date/2021
                         <br> https://w3id.org/AbbasKiarostami-LOD/date/1998
                         <br> https://w3id.org/AbbasKiarostami-LOD/date/1997
                         <br>
-                        <br> https://w3id.org/AbbasKiarostami-LOD/institution/cineteca-di-bologna
-                        <br> https://w3id.org/AbbasKiarostami-LOD/institution/
                         <br>
-                        <br> hhttps://w3id.org/AbbasKiarostami-LOD/event/where-is-kiarostami
-                        <br> https://w3id.org/AbbasKiarostami-LOD/object/poster-taste-of-cherry
+                        <br> https://w3id.org/AbbasKiarostami-LOD/organization/cineteca-di-bologna
+                        <br> https://w3id.org/AbbasKiarostami-LOD/organization/cinema-modernissimo
+                        <br> https://w3id.org/AbbasKiarostami-LOD/organization/tehran-university
+                        <br> https://w3id.org/AbbasKiarostami-LOD/organization/School-of-visual-Art-N.Y.
+                        <br>
+                        <br> https://w3id.org/AbbasKiarostami-LOD/event/where-is-kiarostami
+                        <br> https://w3id.org/AbbasKiarostami-LOD/event/1997-cannes-festival
+                        <br>
+                        <br> https://w3id.org/AbbasKiarostami-LOD/object/modernissimo-chair-Kiarostami
+                        <br>
+                        <br> https://w3id.org/AbbasKiarostami-LOD/movie/taste-of-cherry
+                        <br> https://w3id.org/AbbasKiarostami-LOD/movie/shirin
+                        <br>
+                        <br> https://w3id.org/AbbasKiarostami-LOD/award/palme-dor-1997
                         <br>
                         <br> https://w3id.org/AbbasKiarostami-LOD/person/abbas-kiarostami
-                        <br>
+                        <br> https://w3id.org/AbbasKiarostami-LOD/person/juliette-binoche
+                        <br> https://w3id.org/AbbasKiarostami-LOD/person/kevin-gaor
+                        <br> https://w3id.org/AbbasKiarostami-LOD/person/massoumeh-lahidji
+                        <br> https://w3id.org/AbbasKiarostami-LOD/person/william-shimell
+                        <br> https://w3id.org/AbbasKiarostami-LOD/person/sylvie-pras
                     </p>
+
+
                     <br><br>
                     <h2 id="rdfv" class="sectitle" style="font-size: 20pt;">RDF Visualization</h2>
-                    <div class="img-magnifier-container "> <img id="myimage" src="" alt="RDF Visualizationn" style="max-width:100%;max-height:100%; border: 2px solid #b4bca3;"></div>
+                    <div class="img-magnifier-container "> <img id="myimage" src="images/rdf.png" alt="RDF Visualizationn" style="max-width:100%;max-height:100%; border: 2px solid #b4bca3;"></div>
+                    <!--zoom img-->
+                    <a href="images/rdf.png" target="blank"><button
+                        class="newtabmyBtn">Zoom Image</button></a>
                     <br><br>
                     <h2 id="process" class="sectitle" style="font-size: 20pt;">Text Processing</h2>
                     <p style="text-align:justify;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sit commodi officiis quisquam repudiandae, neque deleniti consequuntur suscipit nobis eos ipsam expedita obcaecati sint maxime? Neque inventore quibusdam consequuntur excepturi?
