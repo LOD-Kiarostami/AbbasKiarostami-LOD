@@ -1,0 +1,82 @@
+SUBJECT,PREDICATE,OBJECT
+person/Kevin Gaor,rdf:type,crm:E21_Person
+person/Kevin Gaor,rdfs:label,Kevin Gaor
+person/Kevin Gaor,owl:sameAs,https://linkedin.com/in/kevin-gaor-ba8833/
+person/Kevin Gaor,schema:alumniOf,organization/School of Visual Art-N.Y.
+person/Kevin Gaor,dcterms:relation,item/poster-taste-of-cherry
+person/massoumeh-lahidji,rdf:type,crm:E21_Person
+person/massoumeh-lahidji,rdfs:label,Massoumeh Lahidji
+person/massoumeh-lahidji,owl:sameAs,https://www.wikidata.org/wiki/Q53106240
+person/massoumeh-lahidji,owl:sameAs,http://viaf.org/viaf/79228404
+person/juliette-binoche,rdf:type,crm:E21_Person
+person/juliette-binoche,rdfs:label,Juliette Binoche
+person/juliette-binoche,owl:sameAs,https://www.wikidata.org/wiki/Q106275
+person/juliette-binoche,crm:P11_participated_in,item/certified-copy
+person/juliette-binoche,crm:P11_participated_in,movie/shirin
+person/william-shimell,rdf:type,crm:E21_Person
+person/william-shimell,rdfs:label,William Shimell
+person/william-shimell,owl:sameAs,https://wikidata.org/wiki/Q3568952
+person/william-shimell,crm:P11_participated_in,item/certified-copy
+person/sylvie-pras,rdf:type,crm:E21_Person
+person/sylvie-pras,rdfs:label,Sylvie Pras
+person/sylvie-pras,owl:sameAs,http://viaf.org/viaf/315255327
+organization/School-of-visual-Art-N.Y.,rdf:type,crm:E53_Place
+organization/School-of-visual-Art-N.Y.,rdfs:label,School of Visual Art-N.Y
+organization/School-of-visual-Art-N.Y.,owl:sameAs,http://viaf.org/viaf/125530405
+organization/tehran-university,rdf:type,crm:E53_Place
+organization/tehran-university,rdfs:label,University of Tehran
+organization/tehran-university,owl:sameAs,http://viaf.org/viaf/135797810
+organization/cineteca-di-bologna,rdf:type,crm:E74_Group
+organization/cineteca-di-bologna,rdfs:label,Cineteca di Bologna
+organization/cineteca-di-bologna,owl:sameAs,http://viaf.org/viaf/124960346
+organization/cineteca-di-bologna,crm:P52_is_current_owner_of,organization/cinema-modernissimo
+organization/cinema-modernissimo,rdf:type,crm:E53_Place
+organization/cinema-modernissimo,rdfs:label,Cinema Modernissimo
+organization/cinema-modernissimo,owl:sameAs,https://www.wikidata.org/wiki/Q124218571
+organization/cinema-modernissimo,crm:P16_used_specific_object,object/modernissimo-chair-Kiarostami
+object/modernissimo-chair-Kiarostami,rdf:type,crm:E22_HumanMade_Object
+object/modernissimo-chair-Kiarostami,rdfs:label,Kiarostami's Chair
+object/modernissimo-chair-Kiarostami,crm:P35_was_identified_by,person/abbas-kiarostami
+movie/taste-of-cherry,rdf:type,crm:E36_Visual_Item
+movie/taste-of-cherry,rdfs:label,taste of cherry
+movie/taste-of-cherry,owl:sameAs,https://www.wikidata.org/wiki/Q794178
+movie/taste-of-cherry,schema:award,award/palme-dor-1997
+movie/shirin,rdf:type,crm:E36_Visual_Item
+movie/shirin,rdfs:label,Movie: Shirin
+movie/shirin,owl:sameAs,https://www.wikidata.org/wiki/Q4408105
+movie/shirin,schema:countryOfOrigin,place/iran
+movie/shirin,schema:director,person/abbas-kiarostami
+award/palme-dor-1997,schema:awardedBy,event/1997-cannes-festival
+award/palme-dor-1997,schema:awardCategory,Best Film
+award/palme-dor-1997,schema:awardYear,Date/1997
+event/1997-cannes-festival,rdf:type,crm:E5_Event
+event/1997-cannes-festival,owl:sameAs,https://www.wikidata.org/wiki/Q252688
+event/1997-cannes-festival,dcterms:relation,movie/taste-of-cherry
+event/1997-cannes-festival,dcterms:spatial,place/France
+date/1997,rdf:type,time:DateTime
+date/1997,rdfs:label,1997
+date/1998,rdf:type,time:DateTime
+date/1998,rdfs:label,1998
+place/France,rdf:type,crm:E53_Place
+place/France,owl:sameAs,https://sws.geonames.org/3017382/
+language/english,rdf:type,schema:Language
+language/english,rdfs:label,English
+language/english,owl:sameAs,dbo:English_language
+language/french,rdf:type,schema:Language
+language/french,rdfs:label,French
+language/french,owl:sameAs,dbo:French_language
+language/italian,rdf:type,schema:Language
+language/italian,rdfs:label,Italian
+language/italian,owl:sameAs,dbo:Italian_language
+language/persian,rdf: type,schema:Language
+language/persian,rdfs:label,Persian
+language/persian,owl:sameAs,dbo:Persian_language
+place/italy,rdf:type,crm:E53_Place 
+place/italy,rdfs:label,Italy
+place/italy,owl:sameAs,https://www.geonames.org/3175395/
+place/belgium,rdf:type,crm:E53_Place 
+place/belgium,rdfs:label,Belgium
+place/belgium,owl:sameAs,https://www.geonames.org/2802361/
+place/usa,rdf:type,crm:E53_Place 
+place/usa,rdfs:label,United States
+place/usa,owl:sameAs,https://www.geonames.org/6252001/

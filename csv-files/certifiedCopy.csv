@@ -1,0 +1,16 @@
+SUBJECT,PREDICATE,OBJECT
+item/certified-copy,rdf:type,crm:E36_Visual_Item
+item/certified-copy,schema: director,person/abbas-kiarostami
+item/certified-copy,dcterms: created,date/2010
+item/certified-copy,crm: p108_was_produced_by,organization/mk2
+item/certified-copy,schema: ContryOfOrigin,place/italy
+item/certified-copy,schema: ContryOfOrigin,place/france
+item/certified-copy,schema: ContryOfOrigin,place/belgium
+item/certified-copy,crm: P72_has_language,language/english
+item/certified-copy,crm: P72_has_language,language/french
+item/certified-copy,crm: P72_has_language,language/italian
+item/certified-copy,schema: actor,person/juliette-binoche
+item/certified-copy,schema: actor,person/William-Shimell
+item/certified-copy,schema: genre,Drama
+item/certified-copy,schema: genre,Romance
+item/certified-copy,owl: sameAs,https://www.wikidata.org/wiki/Q1214594

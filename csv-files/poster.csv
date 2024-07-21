@@ -1,0 +1,10 @@
+SUBJECT,PREDICATE,OBJECT
+item/poster-taste-of-cherry,rdf:type,crm:E22_Human-Made_Object
+item/poster-taste-of-cherry,rdfs:label,Movie Poster: Taste of Cherry
+item/poster-taste-of-cherry,dcterms:creator,person/kevin-gaor
+item/poster-taste-of-cherry,schema:datePublished,date/1998
+item/poster-taste-of-cherry,crm: P72_has_language,language/english
+item/poster-taste-of-cherry,dcterms:spatial,place/usa
+item/poster-taste-of-cherry,crm: P65_shows_visual_item,movie/taste-of-cherry
+item/poster-taste-of-cherry,dcterms:alternative,Le goût de la cerise
+item/poster-taste-of-cherry,crm:P90_has_value,$195.00

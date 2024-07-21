@@ -1,0 +1,9 @@
+SUBJECT,PREDICATE,OBJECT
+item/76 minutes and 15 Seconds with Abbas Kiarostami,rdf:type,crm:E36_Visual_Item
+item/76 minutes and 15 Seconds with Abbas Kiarostami,schema: director,person/Seifollah Samadian
+item/76 minutes and 15 Seconds with Abbas Kiarostami,dcterms: created,date/2016
+item/76 minutes and 15 Seconds with Abbas Kiarostami,crm: P108_was_produced_by,organization/Tassvir Film Center
+item/76 minutes and 15 Seconds with Abbas Kiarostami,schema: ContryOfOrigin,place/Iran
+item/76 minutes and 15 Seconds with Abbas Kiarostami,crm: P72_has_language,language/Persian
+item/76 minutes and 15 Seconds with Abbas Kiarostami,dcterms: subject,person/abbas-kiarostami
+item/76 minutes and 15 Seconds with Abbas Kiarostami,schema: genre,documentary

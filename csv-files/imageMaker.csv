@@ -1,0 +1,15 @@
+SUBJECT,PREDICATE,OBJECT,
+item/abbas-kiarostami:image-maker,crm:P2_has_type_of,crm:E2_Temporal_Entity
+item/abbas-kiarostami:image-maker,crm:P148_has_component,Film
+item/abbas-kiarostami:image-maker,crm:P148_has_component,Photography
+item/abbas-kiarostami:image-maker,crm:P148_has_component,Installations
+item/abbas-kiarostami:image-maker,crm:P4_has_time-span,from March 1–May 28 2007
+item/abbas-kiarostami:image-maker,crm:P4_has_time-span,February 11–April 29 2007
+item/abbas-kiarostami:image-maker,crm:P147_was_curated_by,person/jytte-jensen
+item/abbas-kiarostami:image-maker,crm:P147_was_curated_by,person/klaus-biesenbach
+item/abbas-kiarostami:image-maker,crm:P147_was_curated_by,organization/iranian-art-foundation
+item/abbas-kiarostami:image-maker,crm:P7_took_place_at,organization/MoMA
+item/abbas-kiarostami:image-maker,crm:P7_took_place_at,organization/PS1
+item/abbas-kiarostami:image-maker,dcterms: subject,person/abbas-kiarostami
+item/abbas-kiarostami:image-maker,schema: location,place/new-york
+item/abbas-kiarostami:image-maker,crm: P69_has_association_with,organization/tehran-university's-faculty-of-fine-arts

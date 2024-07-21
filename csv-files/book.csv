@@ -1,0 +1,10 @@
+SUBJECT,PREDICATE,OBJECT
+item/lessons-with-kiarostami,rdf:type,crm:E22_Human-Made_Object
+item/lessons-with-kiarostami,dcterms:creator,person/abbas-kiarostami
+item/lessons-with-kiarostami,dcterms:creator,person/paul-cronin
+item/lessons-with-kiarostami,dcterms:contributor,person/mike-leigh
+item/lessons-with-kiarostami,dcterms:publisher,organization/sticking-place-books
+item/lessons-with-kiarostami,schema:datePublished,date/2015
+item/lessons-with-kiarostami,frbroo:R6_has_place_of_publication,place/new-york
+item/lessons-with-kiarostami,schema:genre,Interview
+item/lessons-with-kiarostami,crm:P73_has_translation,language/persian

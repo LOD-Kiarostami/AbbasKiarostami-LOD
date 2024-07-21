@@ -1,0 +1,12 @@
+SUBJECT,PREDICATE,OBJECT
+person/abbas-kiarostami,rdf:type,crm:E21_Person
+person/abbas-kiarostami,owl:sameAs,https://viaf.org/viaf/114753296/
+person/abbas-kiarostami,RDFS:label,Abbas Kiarostami
+person/abbas-kiarostami,dbo:birthPlace,place/tehran
+person/abbas-kiarostami,dbo:birthDate,date/22june1940
+person/abbas-kiarostami,dbo:deathDate,date/4july2016
+person/abbas-kiarostami,schema:alumniOf,organization/tehran-university
+person/abbas-kiarostami,schema:hasOccupation,dbo:film_director
+person/abbas-kiarostami,schema:hasOccupation,dbo:writer
+person/abbas-kiarostami,schema:hasOccupation,dbo:poet
+person/abbas-kiarostami,schema:hasOccupation,dbo:photographer

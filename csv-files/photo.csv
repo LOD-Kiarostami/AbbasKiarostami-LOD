@@ -1,0 +1,6 @@
+SUBJECT,PREDICATE,OBJECT
+item/untitled-2000,rdf:type,schema:ImageObject
+item/untitled-2000,crm:P179_had_sales_price,"$2,322.00"
+item/untitled-2000,dcterms:created,date/1996
+item/untitled-2000,schema:location,place/iran
+item/untitled-2000,dcterms:subject,place/abbas-kiarostami

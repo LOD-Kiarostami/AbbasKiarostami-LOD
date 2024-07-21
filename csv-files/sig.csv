@@ -1,0 +1,8 @@
+SUBJECT,PREDICATE,OBJECT
+item/kiarostami's-signature,rdf:type,schema:ImageObject
+item/kiarostami's-signature,dcterms:created,person/abbas-kiarostami
+item/kiarostami's-signature,dcterms:language,language/persian
+item/kiarostami's-signature,dcterms:format,jpg
+item/kiarostami's-signature,dcterms:format,svg
+item/kiarostami's-signature,crm:P43_has_dimension,525px*220px
+item/kiarostami's-signature,schema:datePublished,date/2016

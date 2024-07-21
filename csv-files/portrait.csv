@@ -1,0 +1,8 @@
+SUBJECT,PREDICATE,OBJECT
+item/kiarostami-directs-portrait,rdf:type,schema:ImageObject
+item/kiarostami-directs-portrait,dcterms:creator,person/kaveh-kazemi
+item/kiarostami-directs-portrait,dcterms:subject,person/abbass-kiarostami
+item/kiarostami-directs-portrait,dcterms:created,1/10/1996
+item/kiarostami-directs-portrait,schema:location,place/Tehran
+item/kiarostami-directs-portrait,dcterms:rightsHolder,organization/gettyimages
+item/kiarostami-directs-portrait,crm: P179_had_sales_price,$475.00

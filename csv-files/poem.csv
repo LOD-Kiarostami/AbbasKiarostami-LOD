@@ -1,0 +1,8 @@
+SUBJECT,PREDICATE,OBJECT
+item/a-wolf-lying-ln-wait,rdf:type,dbo:poem
+item/a-wolf-lying-ln-wait,schema: datePublished,date/1999
+item/a-wolf-lying-ln-wait,crm:P72_has_language,language/english
+item/a-wolf-lying-ln-wait,crm:P72_has_language,language/persian
+item/a-wolf-lying-ln-wait,dcterms:publisher,person/ali-asghar-elmi
+item/a-wolf-lying-ln-wait,frbroo:R6_has_place_of_publication,place/tehran
+item/a-wolf-lying-ln-wait,dcterms:publisher,organization/sokhan-publication

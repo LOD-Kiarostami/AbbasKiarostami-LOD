@@ -1,0 +1,229 @@
+@base <https://w3id.org/AbbasKiarostami-LOD/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbroo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+<date/1997> a time:DateTime ;
+    rdfs:label "1997"^^schema:Date .
+
+<item/76-minutes-and-15-Seconds-with-Abbas-Kiarostami> a crm:E36_Visual_Item ;
+    dcterms:created <date/2016> ;
+    dcterms:subject <person/abbas-kiarostami> ;
+    crm:P108_was_produced_by <organization/Tassvir-Film-Center> ;
+    crm:P72_has_language <language/Persian> ;
+    schema:ContryOfOrigin <place/Iran> ;
+    schema:director <person/Seifollah-Samadian> ;
+    schema:genre "documentary" .
+
+<item/a-wolf-lying-ln-wait> a dbo:poem ;
+    frbroo:R6_has_place_of_publication <place/tehran> ;
+    dcterms:publisher <organization/sokhan-publication>,
+        <person/ali-asghar-elmi> ;
+    crm:P72_has_language <language/english>,
+        <language/persian> ;
+    schema:datePublished <date/1999> .
+
+<item/abbas-kiarostami:image-maker> dcterms:subject <person/abbas-kiarostami> ;
+    crm:P147_was_curated_by <organization/iranian-art-foundation>,
+        <person/jytte-jensen>,
+        <person/klaus-biesenbach> ;
+    crm:P148_has_component "Film",
+        "Installations",
+        "Photography" ;
+    crm:P2_has_type_of crm:E2_Temporal_Entity ;
+    crm:P4_has_time-span "February 11–April 29 2007",
+        "from March 1–May 28 2007" ;
+    crm:P69_has_association_with <organization/tehran-university's-faculty-of-fine-arts> ;
+    crm:P7_took_place_at <organization/MoMA>,
+        <organization/PS1> ;
+    schema:location <place/new-york> .
+
+<item/kiarostami's-signature> a schema:ImageObject ;
+    dcterms:created <person/abbas-kiarostami> ;
+    dcterms:format "jpg",
+        "svg" ;
+    dcterms:language <language/persian> ;
+    crm:P43_has_dimension "525px*220px" ;
+    schema:datePublished <date/2016> .
+
+<item/kiarostami-directs-portrait> a schema:ImageObject ;
+    dcterms:created "1/10/1996" ;
+    dcterms:creator <person/kaveh-kazemi> ;
+    dcterms:rightsHolder <organization/gettyimages> ;
+    dcterms:subject <person/abbass-kiarostami> ;
+    crm:P179_had_sales_price "$475.00" ;
+    schema:location <place/Tehran> .
+
+<item/lessons-with-kiarostami> a crm:E22_Human-Made_Object ;
+    frbroo:R6_has_place_of_publication <place/new-york> ;
+    dcterms:contributor <person/mike-leigh> ;
+    dcterms:creator <person/abbas-kiarostami>,
+        <person/paul-cronin> ;
+    dcterms:publisher <organization/sticking-place-books> ;
+    crm:P73_has_translation <language/persian> ;
+    schema:datePublished <date/2015> ;
+    schema:genre "Interview" .
+
+<item/untitled-2000> a schema:ImageObject ;
+    dcterms:created <date/1996> ;
+    dcterms:subject <place/abbas-kiarostami> ;
+    crm:P179_had_sales_price "$2,322.00" ;
+    schema:location <place/iran> .
+
+<item/where-is-kiarostami> a crm:E5_Event ;
+    frbroo:R17 <organization/Cinteca-di-bologna> ;
+    dcterms:date <date/2021> ;
+    dcterms:isPartOf <event/Cinema-ritrovato-film-festival> ;
+    dcterms:spatial <place/Bologna> ;
+    crm:P11_had_participant <person/massoumeh-lahidji>,
+        <person/sylvie-pras> ;
+    crm:P72_has_language <language/english>,
+        <language/french>,
+        <language/italian> ;
+    schema:isSubjectOf <person/abbas-kiarostami> .
+
+<organization/School-of-visual-Art-N.Y.> a crm:E53_Place ;
+    rdfs:label "School of Visual Art-N.Y" ;
+    owl:sameAs <http://viaf.org/viaf/125530405> .
+
+<organization/cineteca-di-bologna> a crm:E74_Group ;
+    rdfs:label "Cineteca di Bologna" ;
+    crm:P52_is_current_owner_of <organization/cinema-modernissimo> ;
+    owl:sameAs <http://viaf.org/viaf/124960346> .
+
+<person/Kevin-Gaor> a crm:E21_Person ;
+    rdfs:label "Kevin Gaor" ;
+    dcterms:relation <item/poster-taste-of-cherry> ;
+    owl:sameAs <https://linkedin.com/in/kevin-gaor-ba8833/> ;
+    schema:alumniOf <organization/School-of-Visual-Art-N.Y.> .
+
+<person/william-shimell> a crm:E21_Person ;
+    rdfs:label "William Shimell" ;
+    crm:P11_participated_in <item/certified-copy> ;
+    owl:sameAs <https://wikidata.org/wiki/Q3568952> .
+
+<award/palme-dor-1997> schema:awardCategory "Best Film" ;
+    schema:awardYear "Date/1997" ;
+    schema:awardedBy <event/1997-cannes-festival> .
+
+<date/1998> a time:DateTime ;
+    rdfs:label "1998"^^schema:Date .
+
+<event/1997-cannes-festival> a crm:E5_Event ;
+    dcterms:relation <movie/taste-of-cherry> ;
+    dcterms:spatial <place/France> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q252688> .
+
+<item/poster-taste-of-cherry> a crm:E22_Human-Made_Object ;
+    rdfs:label "Movie Poster: Taste of Cherry" ;
+    dcterms:alternative "Le goût de la cerise" ;
+    dcterms:creator <person/kevin-gaor> ;
+    dcterms:spatial <place/usa> ;
+    crm:P65_shows_visual_item <movie/taste-of-cherry> ;
+    crm:P72_has_language <language/english> ;
+    crm:P90_has_value "$195.00" ;
+    schema:datePublished <date/1998> .
+
+<movie/shirin> a crm:E36_Visual_Item ;
+    rdfs:label "Movie: Shirin" ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q4408105> ;
+    schema:countryOfOrigin <place/iran> ;
+    schema:director <person/abbas-kiarostami> .
+
+<object/modernissimo-chair-Kiarostami> a crm:E22_HumanMade_Object ;
+    rdfs:label "Kiarostami's Chair" ;
+    crm:P35_was_identified_by <person/abbas-kiarostami> .
+
+<organization/cinema-modernissimo> a crm:E53_Place ;
+    rdfs:label "Cinema Modernissimo" ;
+    crm:P16_used_specific_object <object/modernissimo-chair-Kiarostami> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q124218571> .
+
+<organization/tehran-university> a crm:E53_Place ;
+    rdfs:label "University of Tehran" ;
+    owl:sameAs <http://viaf.org/viaf/135797810> .
+
+<person/juliette-binoche> a crm:E21_Person ;
+    rdfs:label "Juliette Binoche" ;
+    crm:P11_participated_in <item/certified-copy>,
+        <movie/shirin> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q106275> .
+
+<person/massoumeh-lahidji> a crm:E21_Person ;
+    rdfs:label "Massoumeh Lahidji" ;
+    owl:sameAs <http://viaf.org/viaf/79228404>,
+        <https://www.wikidata.org/wiki/Q53106240> .
+
+<person/sylvie-pras> a crm:E21_Person ;
+    rdfs:label "Sylvie Pras" ;
+    owl:sameAs <http://viaf.org/viaf/315255327> .
+
+<place/France> a crm:E53_Place ;
+    owl:sameAs <https://sws.geonames.org/3017382/> .
+
+<place/belgium> a crm:E53_Place ;
+    rdfs:label "Belgium" ;
+    owl:sameAs <https://www.geonames.org/2802361/> .
+
+<place/italy> a crm:E53_Place ;
+    rdfs:label "Italy" ;
+    owl:sameAs <https://www.geonames.org/3175395/> .
+
+<place/usa> a crm:E53_Place ;
+    rdfs:label "United States" ;
+    owl:sameAs <https://www.geonames.org/6252001/> .
+
+<item/certified-copy> a crm:E36_Visual_Item ;
+    dcterms:created <date/2010> ;
+    crm:P72_has_language <language/english>,
+        <language/french>,
+        <language/italian> ;
+    crm:p108_was_produced_by <organization/mk2> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1214594> ;
+    schema:ContryOfOrigin <place/belgium>,
+        <place/france>,
+        <place/italy> ;
+    schema:actor <person/William-Shimell>,
+        <person/juliette-binoche> ;
+    schema:director <person/abbas-kiarostami> ;
+    schema:genre "Drama",
+        "Romance" .
+
+<language/french> a schema:Language ;
+    rdfs:label "French" ;
+    owl:sameAs dbo:French_language .
+
+<language/italian> a schema:Language ;
+    rdfs:label "Italian" ;
+    owl:sameAs dbo:Italian_language .
+
+<movie/taste-of-cherry> a crm:E36_Visual_Item ;
+    rdfs:label "taste of cherry" ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q794178> ;
+    schema:award <award/palme-dor-1997> .
+
+<language/persian> a schema:Language ;
+    rdfs:label "Persian" ;
+    owl:sameAs dbo:Persian_language .
+
+<language/english> a schema:Language ;
+    rdfs:label "English" ;
+    owl:sameAs dbo:English_language .
+
+<person/abbas-kiarostami> a crm:E21_Person ;
+    rdfs:label "Abbas Kiarostami" ;
+    dbo:birthDate <date/22june1940> ;
+    dbo:birthPlace <place/tehran> ;
+    dbo:deathDate <date/4july2016> ;
+    owl:sameAs <https://viaf.org/viaf/114753296/> ;
+    schema:alumniOf <organization/tehran-university> ;
+    schema:hasOccupation dbo:film_director,
+        dbo:photographer,
+        dbo:poet,
+        dbo:writer .
+

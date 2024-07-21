@@ -1,0 +1,12 @@
+SUBJECT,PREDICATE,OBJECT
+item/where-is-kiarostami,rdf:type,crm:E5_Event
+item/where-is-kiarostami,schema:isSubjectOf,person/abbas-kiarostami
+item/where-is-kiarostami,dcterms:date,date/2021
+item/where-is-kiarostami,crm: P11_had_participant,person/sylvie-pras
+item/where-is-kiarostami,crm: P11_had_participant,person/massoumeh-lahidji
+item/where-is-kiarostami,dcterms: isPartOf,event/Cinema-ritrovato-film-festival
+item/where-is-kiarostami,dcterms: spatial,place/Bologna
+item/where-is-kiarostami,frbroo: R17,organization/Cinteca-di-bologna
+item/where-is-kiarostami,crm: P72_has_language,language/french
+item/where-is-kiarostami,crm: P72_has_language,language/italian
+item/where-is-kiarostami,crm: P72_has_language,language/english
