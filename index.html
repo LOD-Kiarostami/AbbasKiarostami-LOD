@@ -193,6 +193,9 @@
                     <br>
                     <div class="img-magnifier-container">
                         <img id="myimage" src="images/ConceptualMap.jpg" alt="Conceptual Map" style="max-width:100%;max-height:100%; border: 2px solid #b4bca3;"></div>
+                    <!--zoom img-->
+                    <a href="images/conceptualMap.jpg" target="blank"><button
+                        class="newtabmyBtn">Zoom Image</button></a>
                     <br><br><br>
                     <h2 id="erm" class="sectitle " style="font-size: 20pt; ">E/R Model</h2>
                     <br>
@@ -200,6 +203,9 @@
                         are depicted as Relationships.</p>
                     <br>
                     <div class="img-magnifier-container "> <img id="myimage" src="images/ERModel.jpg " alt="E/R Model " style="max-width:100%;max-height:100%; border: 2px solid #b4bca3;"></div>
+                    <!--zoom img-->
+                    <a href="images/ERModel.jpg" target="blank"><button
+                        class="newtabmyBtn">Zoom Image</button></a>
                     <br style="margin-top:10px; ">
                     <br><br>
                     <hr class="bookends ">
@@ -271,7 +277,7 @@
                             <td>CDWA</td>
                         </tr>
                         <tr>
-                            <td class="td1">76 Minutes 76 minutes and 15 seconds with Abbas Kiarostami</td>
+                            <td class="td1">76 Minutes and 15 seconds with Abbas Kiarostami</td>
                             <td>Movie</td>
                             <td>IMDB</td>
                             <td>Schema.org</td>
@@ -316,10 +322,10 @@
                         <tr>
                             <td class="td1">Creator</td>
                             <td>schema: creator</td>
-                            <td>Creator Display (specify Creator Extent, Creator Role)</td>
+                            <td>Creator Display</td>
                             <td>dcterms: creator</td>
-                            <td>P24 has creator</td>
-                            <td>P50 author</td>
+                            <td>crm: P24 has creator</td>
+                            <td>wdt: P50 author</td>
                             <td>100</td>
                             <td>frbroo: R17</td>
                         </tr>
@@ -328,9 +334,8 @@
                             <td>schema: contributor</td>
                             <td>4.1.1. CREATOR EXTENT</td>
                             <td>dcterms: contributor</td>
-                            <td>crm: P69_has_association_with</td>
-                            <td>P767 contributor to the creative work or subject</td>
-
+                            <td>crm: P69 has association with</td>
+                            <td>wdt: P767 contributor to the creative work or subject</td>
                             <td>700</td>
                             <td>frbroo: R17 </td>
                         </tr>
@@ -349,8 +354,8 @@
                             <td>schema: publisher</td>
                             <td>27.2.2.6. SOURCE PUBLISHER</td>
                             <td>dcterms: publisher</td>
-                            <td>P14 carried out by</td>
-                            <td>P123 Publisher</td>
+                            <td>crm: P14 carried out by</td>
+                            <td>wdt: P123 Publisher</td>
                             <td>260</td>
                             <td>frbroo: R19</td>
                         </tr>
@@ -359,8 +364,8 @@
                             <td>schema: actor</td>
                             <td>N/A</td>
                             <td>dcterms: contributor</td>
-                            <td>E39 Actor</td>
-                            <td>P161 Cast member</td>
+                            <td>crm: E39 Actor</td>
+                            <td>wdt: P161 Cast member</td>
                             <td>700 $e</td>
                             <td>N/A</td>
                         </tr>
@@ -370,7 +375,7 @@
                             <td>27.2.2.4. SOURCE EDITOR/COMPILER</td>
                             <td>N/A</td>
                             <td>N/A</td>
-                            <td>P665 translator</td>
+                            <td>wdt: P665 translator</td>
                             <td>700 $e</td>
                             <td>frbroo: R31</td>
                         </tr>
@@ -380,7 +385,7 @@
                             <td>4.1.4. Creator Role</td>
                             <td>N/A</td>
                             <td>N/A</td>
-                            <td>P57 director</td>
+                            <td>wdt: P57 director</td>
                             <td>N/A</td>
                             <td>N/A</td>
                         </tr>
@@ -406,8 +411,8 @@
                             <td>schema: type</td>
                             <td>Work Type</td>
                             <td>dcterms: type</td>
-                            <td>P2 has type</td>
-                            <td>P1163 media type</td>
+                            <td>crm: P2 has type</td>
+                            <td>wdt: P1163 media type</td>
                             <td>336</td>
                             <td>frbroo:CLP2</td>
                         </tr>
@@ -416,9 +421,9 @@
                             <td>schema: identifier</td>
                             <td>*21.2.3. Repository Number</td>
                             <td>dcterm: identifier</td>
-                            <td>P1 identifies</td>
-                            <td>P356 DOI</td>
-                            <td>020: (ISSN)</td>
+                            <td>crm: P1 identifies</td>
+                            <td>wdt: P356 DOI</td>
+                            <td>020</td>
                             <td>frbroo: F13 Identifier</td>
                         </tr>
                         <tr>
@@ -427,7 +432,7 @@
                             <td>N/A</td>
                             <td>dcterms: type</td>
                             <td>N/A</td>
-                            <td>P136 genre</td>
+                            <td>wdt: P136 genre</td>
                             <td>655 Index Term-Genre/Form </td>
                             <td>N/A</td>
                         </tr>
@@ -436,8 +441,8 @@
                             <td>schema: subjectOf</td>
                             <td>31.2. Subject Name</td>
                             <td>dcterms: subject</td>
-                            <td>P129 is subject of</td>
-                            <td>P921 main subject P180 depicts</td>
+                            <td>crm: P129 is subject of</td>
+                            <td>wdt: P921 main subject P180 depicts</td>
                             <td>76xx</td>
                             <td>frbroo: R59 had typical subject</td>
                         </tr>
@@ -446,8 +451,8 @@
                             <td>schema: inLanguage</td>
                             <td>Language</td>
                             <td>dcterms: language</td>
-                            <td>crm: P72_has_language</td>
-                            <td>P407 language of</td>
+                            <td>crm: P72 has language</td>
+                            <td>wdt: P407 language of</td>
                             <td>377</td>
                             <td>frbroo: R60 used</td>
                         </tr>
@@ -456,8 +461,8 @@
                             <td>schema: translationOfWork</td>
                             <td>N/A</td>
                             <td>N/A</td>
-                            <td>crm:p73: has translation</td>
-                            <td>P747 has edition or translation</td>
+                            <td>crm:p73 has translation</td>
+                            <td>wdt: P73 translation</td>
                             <td>767 Translation Entry</td>
                             <td>frbroo: R31</td>
                         </tr>
@@ -472,31 +477,21 @@
                             <td>frbroo: CLP43</td>
                         </tr>
                         <tr>
-                            <td class="td1">Children</td>
+                            <td class="td1">Includes/in included in</td>
                             <td>schema: isPartOf</td>
                             <td>N/A</td>
                             <td>dcterm: isPartOf</td>
-                            <td>crm: P148 has component / schema:includes</td>
-                            <td>P179 Part of series</td>
-                            <td>762 Subseries Entry</td>
-                            <td>N/A</td>
-                        </tr>
-                        <tr>
-                            <td class="td1">Parent</td>
-                            <td>N/A</td>
-                            <td>N/A</td>
-                            <td>N/A</td>
-                            <td>P152 has parent (is parent of)</td>
-                            <td>N/A</td>
-                            <td>772 Supplement Parent Entry</td>
-                            <td>frbroo: R15i</td>
+                            <td>crm:P148 has component / crm:P152 has parent</td>
+                            <td>wdt: P179 Part of series / P1433 published in</td>
+                            <td>762 Subseries Entry/ 772 Supplement Parent Entry</td>
+                            <td>frbroo:R15i</td>
                         </tr>
                         <tr>
                             <td class="td1">Price</td>
                             <td>N/A</td>
                             <td>23.3. COST OR VALUE</td>
                             <td>N/A</td>
-                            <td>P179 had sales price</td>
+                            <td>crm: P179 had sales price</td>
                             <td>N/A</td>
                             <td>020 $c</td>
                             <td>frbroo: E97 Monetary Amount</td>
@@ -507,7 +502,7 @@
                             <td>*22.1. Copyrights Satement</td>
                             <td>dcterms: Rights</td>
                             <td>N/A</td>
-                            <td>P275 copyright license</td>
+                            <td>wdt: P275 copyright license</td>
                             <td>264 $c</td>
                             <td>frbroo: CLP104</td>
                         </tr>
@@ -517,7 +512,7 @@
                             <td>N/A</td>
                             <td>dc: format</td>
                             <td>crm: P2 has type</td>
-                            <td>p437 distribution format</td>
+                            <td>wdt: P437 distribution format</td>
                             <td>338 Carrier Type</td>
                             <td>N/A</td>
                         </tr>
@@ -543,9 +538,9 @@
                             <td>schema: contentLocation</td>
                             <td>27.2.2.5. Source Publication Place</td>
                             <td>dcterms: coverage</td>
-                            <td>E53 Place</td>
-                            <td>P1071 location of creation</td>
-                            <td>264 $a: (Publication, distribution)</td>
+                            <td>crm: E53 Place</td>
+                            <td>wdt: P1071 location of creation</td>
+                            <td>264 $a</td>
                             <td>frbroo: R6</td>
                         </tr>
                         <tr>
@@ -553,8 +548,8 @@
                             <td>schema: location/ schema: ContryOfOrigin</td>
                             <td>29.2. Place Name</td>
                             <td>dcterms: spatial</td>
-                            <td>crm: P7_took_place_at</td>
-                            <td>P291 place of publication</td>
+                            <td>crm: P7 took place at</td>
+                            <td>wdt: P291 place of publication</td>
                             <td>752</td>
                             <td>frbroo: R25i was performed in</td>
                         </tr>
@@ -581,9 +576,9 @@
                             <td>schema: datePublished</td>
                             <td>27.2.2.7. Source Publication Year</td>
                             <td>dcterms: available</td>
-                            <td>E12 Production</td>
-                            <td>P577 publication date P1191 date of first performance</td>
-                            <td>264 - Production, Publication, Distribution, Manufacture, and Copyright Notice - $c date of production</td>
+                            <td>crm: E12 Production</td>
+                            <td>wdt: P577 publication date P1191 date of first performance</td>
+                            <td>264$c</td>
                             <td>frbroo: R23 has date of production</td>
                         </tr>
                         <tr>
@@ -591,8 +586,8 @@
                             <td>schema: dateCreated</td>
                             <td>4.2. Creation Date</td>
                             <td>dcterms: created</td>
-                            <td>E12 Production</td>
-                            <td>P2754 production date</td>
+                            <td>crm: E12 Production</td>
+                            <td>wdt: P2754 production date</td>
                             <td>500</td>
                             <td>frbroo: R12 has date of creation</td>
                         </tr>
@@ -601,8 +596,8 @@
                             <td>schema: duration</td>
                             <td>N/A</td>
                             <td>dcterm: SizeOrDuration</td>
-                            <td>crm:P4_has_time-span</td>
-                            <td>P2047 Duration</td>
+                            <td>crm:P4 has time-span</td>
+                            <td>wdt: P2047 Duration</td>
                             <td>306 Playing Time</td>
                             <td>N/A</td>
                         </tr>
@@ -626,11 +621,17 @@
                             </ul>
                         </p>
                         <div class="img-magnifier-container"> <img id="myimage2" src="images/theoratical.jpg" alt="Theoretical Model" style="max-width:100%;max-height:100%; border: 1px solid rgb(0, 0, 0);"></div>
+                        <!--zoom img-->
+                        <a href="images/theoratical.jpg" target="blank"><button
+                        class="newtabmyBtn">Zoom Image</button></a>
                         <br>
                         <h2 id="eerm" class="sectitle" style="font-size: 20pt;">Enhanced E/R Model</h2>
                         <p style="text-align:justify;">The Theoretical Model, initially developed in natural language, is subsequently transformed into an Enhanced Entity/Relationship (E/R) Model. This refined version builds upon the previous E/R Model, incorporating the enhancements
                             made during later stages of development.</p>
                         <div class="img-magnifier-container"> <img id="myimage5" src="images/enhanced.jpg" alt="Enhanced E/R Model" style="max-width:100%; max-height:100%; border: 1px solid rgb(0, 0, 0);"></div>
+                        <!--zoom img-->
+                        <a href="images/enhanced.jpg" target="blank"><button
+                        class="newtabmyBtn">Zoom Image</button></a>
 
                         <br>
                         <h2 id="cm" class="sectitle" style="font-size: 20pt;">Conceptual Model</h2>
