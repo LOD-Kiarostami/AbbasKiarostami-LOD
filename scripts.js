@@ -85,25 +85,46 @@ function w3RemoveClass(element, name) {
 }
 
 // Add active class to the current control button (highlight it)
-var btnContainer = document.getElementsByClassName("itemDescBtn")[0];
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function() {
-        var current = document.querySelectorAll(".itemDescBtn > .active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
+// JAVASCRIPT FOR THE METADATA ALIGNMENT FILTERING
+
+function filterSelection(groupName, c, btn) {
+    var i;
+    var x = document.getElementsByClassName('filterDiv ' + groupName);
+
+    // Hide all elements with the specified groupName
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+
+    // Show the elements that match the filter criteria
+    for (i = 0; i < x.length; i++) {
+        if (x[i].className.indexOf(c) > -1) {
+            x[i].style.display = "block";
+        }
+    }
+
+    // Remove the "active" class from all buttons
+    var btns = document.querySelectorAll('#myBtnContainer .btn');
+    btns.forEach(function(btn) {
+        btn.classList.remove('active');
     });
+
+    // Add the "active" class to the clicked button
+    btn.classList.add('active');
 }
 
-var btnContainer = document.getElementsByClassName("metaAlignBtn")[0];
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function() {
-        var current = document.querySelectorAll(".metaAlignBtn > .active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-    });
-}
+// Initial display setup
+document.addEventListener('DOMContentLoaded', function() {
+    var initialBtn = document.querySelector('#myBtnContainer .btn.active');
+    if (initialBtn) {
+        filterSelection('metaAlign', 'who', initialBtn);
+    }
+});
+
+
+
+
+
 
 
 /*MODALS ZOOM IMAGE*/

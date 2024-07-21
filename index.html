@@ -293,10 +293,10 @@
 
                 <div id="myBtnContainer" class="metaAlignBtn col-lg-10">
                     <!-- Buttons for the filtering with the 4W-->
-                    <button class="btn active" onclick="filterSelection('metaAlign','who')" id="who">WHO</button>
-                    <button class="btn" onclick="filterSelection('metaAlign','what')" id="what">WHAT</button>
-                    <button class="btn" onclick="filterSelection('metaAlign','where')" id="where">WHERE</button>
-                    <button class="btn" onclick="filterSelection('metaAlign','when')" id="when">WHEN</button>
+                    <button class="btn active" onclick="filterSelection('metaAlign','who', this)" id="who"><b>WHO</b></button>
+                    <button class="btn" onclick="filterSelection('metaAlign','what', this)" id="what"><b>WHAT</b></button>
+                    <button class="btn" onclick="filterSelection('metaAlign','where', this)" id="where"><b>WHERE</b></button>
+                    <button class="btn" onclick="filterSelection('metaAlign','when', this)" id="when"><b>WHEN</b></button>
                 </div>
                 <div class="filterDiv metaAlign who col-lg-10">
                     <!-- WHO CONTENT -->
@@ -661,16 +661,16 @@
                     <!-- the table -->
                     <div class="container">
                         <div id="myBtnContainer" class="itemDescBtn">
-                            <button class="btn active" onclick="filterSelection('itemDesc', 'Taste-of-Cherry')" id="Taste-of-Cherry"><b>Taste of Cherry</b></button>
-                            <button class="btn" onclick="filterSelection('itemDesc','Certified-Copy')" id="Certified-Copy"><b>Certified Copy</b></button>
-                            <button class="btn" onclick="filterSelection('itemDesc','Signature')" id="Signature"><b>Signature</b></button>
-                            <button class="btn" onclick="filterSelection('itemDesc','Untitled')" id="Untitled"><b>Untitled,2000</b></button>
-                            <button class="btn" onclick="filterSelection('itemDesc','WhereIsKiarostami')" id="WhereIsKiarostami"><b>Where Is Kiarostami</b></button>
-                            <button class="btn" onclick="filterSelection('itemDesc','Lessons-with-Kiarostami')" id="Lessons-with-Kiarostami"><b>Lessons with Kiarostami</b></button>
-                            <button class="btn" onclick="filterSelection('itemDesc','ImageMaker')" id="ImageMaker"><b>Kiarostami: Image Maker</b></button>
-                            <button class="btn" onclick="filterSelection('itemDesc','directs')" id="directs"><b>Kiarostami Directs</b></button>
-                            <button class="btn" onclick="filterSelection('itemDesc','document')" id="document"><b>76 Minutes and 15 seconds</b></button>
-                            <button class="btn" onclick="filterSelection('itemDesc','wolfLying')" id="wolfLying"><b>A Wolf Lying in Wait</b></button>
+                            <button class="btn active" onclick="filterSelection('itemDesc', 'Taste-of-Cherry',this)" id="Taste-of-Cherry"><b>Taste of Cherry</b></button>
+                            <button class="btn" onclick="filterSelection('itemDesc','Certified-Copy',this)" id="Certified-Copy"><b>Certified Copy</b></button>
+                            <button class="btn" onclick="filterSelection('itemDesc','Signature',this)" id="Signature"><b>Signature</b></button>
+                            <button class="btn" onclick="filterSelection('itemDesc','Untitled',this)" id="Untitled"><b>Untitled,2000</b></button>
+                            <button class="btn" onclick="filterSelection('itemDesc','WhereIsKiarostami',this)" id="WhereIsKiarostami"><b>Where Is Kiarostami</b></button>
+                            <button class="btn" onclick="filterSelection('itemDesc','Lessons-with-Kiarostami',this)" id="Lessons-with-Kiarostami"><b>Lessons with Kiarostami</b></button>
+                            <button class="btn" onclick="filterSelection('itemDesc','ImageMaker',this)" id="ImageMaker"><b>Kiarostami: Image Maker</b></button>
+                            <button class="btn" onclick="filterSelection('itemDesc','directs',this)" id="directs"><b>Kiarostami Directs</b></button>
+                            <button class="btn" onclick="filterSelection('itemDesc','document',this)" id="document"><b>76 Minutes and 15 seconds</b></button>
+                            <button class="btn" onclick="filterSelection('itemDesc','wolfLying',this)" id="wolfLying"><b>A Wolf Lying in Wait</b></button>
                         </div>
                         <div class="filterDiv itemDesc Taste-of-Cherry">
                             <table id="Taste-of-Cherry">
@@ -683,7 +683,7 @@
                                 </thead>
                                 <tr>
                                     <td>The Poster of the taste of cherry</td>
-                                    <td>dcterms: type</td>
+                                    <td>rdf: type</td>
                                     <td>Image</td>
                                 </tr>
                                 <tr>
@@ -716,6 +716,11 @@
                                     <td>dcterms:alternative</td>
                                     <td>Le goût de la cerise</td>
                                 </tr>
+                                <tr>
+                                    <td>The Poster of the taste of cherry</td>
+                                    <td>crm: P90_has_value</td>
+                                    <td>195</td>
+                                </tr>
                             </table>
                         </div>
                         <div class="filterDiv itemDesc Certified-Copy">
@@ -729,7 +734,7 @@
                                 </thead>
                                 <tr>
                                     <td>Certified Copy</td>
-                                    <td>schema: type</td>
+                                    <td>rdf: type</td>
                                     <td>Movie</td>
                                 </tr>
                                 <tr>
@@ -760,7 +765,7 @@
                                 <tr>
                                     <td>Certified Copy</td>
                                     <td>schema: actor</td>
-                                    <td>Juliette Binoche</td>
+                                    <td>Juliette Binoche, William Shimell</td>
                                 </tr>
                                 <tr>
                                     <td>Certified Copy</td>
@@ -781,7 +786,7 @@
                                 </thead>
                                 <tr>
                                     <td>Abbas Kiarostami's Signature</td>
-                                    <td>dcterms: type</td>
+                                    <td>rdf: type</td>
                                     <td>Image</td>
                                 </tr>
                                 <tr>
@@ -822,7 +827,7 @@
                                 </thead>
                                 <tr>
                                     <td>Untitled, 2000</td>
-                                    <td>dcterms: type</td>
+                                    <td>rdf: type</td>
                                     <td>Image</td>
                                 </tr>
                                 <tr>
@@ -858,7 +863,7 @@
                                 </thead>
                                 <tr>
                                     <td>Where is Kiarostami </td>
-                                    <td>dcterms: type</td>
+                                    <td>rdf: type</td>
                                     <td>Event</td>
                                 </tr>
                                 <tr>
@@ -960,13 +965,13 @@
                                 </tr>
                                 <tr>
                                     <td>Image Maker</td>
-                                    <td>dcterm: date</td>
+                                    <td>crm:P4_has_time-span</td>
                                     <td>from March 1–May 28 and February 11–April 29, 2007</td>
                                 </tr>
                                 <tr>
                                     <td>Image Maker</td>
                                     <td>crm: P147_was_curated_by</td>
-                                    <td>Jytte Jensen and Klaus Biesenbach</td>
+                                    <td>Jytte Jensen, Klaus Biesenbach and Iranian Art Foundation</td>
                                 </tr>
                                 <tr>
                                     <td>Image Maker</td>
@@ -1001,7 +1006,7 @@
                                 </thead>
                                 <tr>
                                     <td>Kiarostami Directs-Portrait</td>
-                                    <td>dcterms: type</td>
+                                    <td>rdf: type</td>
                                     <td>Image</td>
                                 </tr>
                                 <tr>
@@ -1047,7 +1052,7 @@
                                 </thead>
                                 <tr>
                                     <td>76 minutes and 15 Seconds with Abbas Kiarostami</td>
-                                    <td>dcterms: type</td>
+                                    <td>rdf: type</td>
                                     <td>Moving Image</td>
                                 </tr>
                                 <tr>
@@ -1060,6 +1065,11 @@
                                     <td>dcterms: created</td>
                                     <td>2016
                                     </td>
+                                </tr>
+                                <tr>
+                                    <td>76 minutes and 15 Seconds with Abbas Kiarostami</td>
+                                    <td>crm: P108_was_produced_by</td>
+                                    <td>Tassvir Film Center</td>
                                 </tr>
                                 <tr>
                                     <td>76 minutes and 15 Seconds with Abbas Kiarostami</td>
@@ -1094,7 +1104,7 @@
                                 </thead>
                                 <tr>
                                     <td>A Wolf Lying In Wait</td>
-                                    <td>dcterms:type</td>
+                                    <td>rdf:type</td>
                                     <td>Text</td>
                                 </tr>
                                 <tr>
@@ -1114,7 +1124,8 @@
                                 </tr>
                                 <tr>
                                     <td>A Wolf Lying In Wait</td>
-                                    <td>fabio: has_place_of_publication</td>
+                                    <td>frbroo:R6_has_place_of_publication
+                                    </td>
                                     <td>Tehran</td>
                                 </tr>
                                 <tr>
@@ -1133,6 +1144,8 @@
                         ontologies were defined, and triples were constructed using Turtle serialization. These triples emphasized relationships among the items and their entities, aiming to link with other relevant resources and authorities wherever
                         feasible.
                     </p>
+
+
                     <p>https://w3id.org/AbbasKiarostami-LOD<br> https://w3id.org/AbbasKiarostami-LOD/item/poster-taste-of-cherry
                         <br> https://w3id.org/AbbasKiarostami-LOD/item/where-is-kiarostami
                         <br> https://w3id.org/AbbasKiarostami-LOD/item/certified-copy
@@ -1144,20 +1157,43 @@
                         <br> https://w3id.org/AbbasKiarostami-LOD/place/france
                         <br> https://w3id.org/AbbasKiarostami-LOD/place/belgium
                         <br>
+                        <br> https://w3id.org/AbbasKiarostami-LOD/language/english
+                        <br> https://w3id.org/AbbasKiarostami-LOD/language/persian
+                        <br> https://w3id.org/AbbasKiarostami-LOD/language/french
+                        <br> https://w3id.org/AbbasKiarostami-LOD/language/italian
+                        <br>
                         <br> https://w3id.org/AbbasKiarostami-LOD/date/21july2021
+                        <br> https://w3id.org/AbbasKiarostami-LOD/date/4july2016
+                        <br> https://w3id.org/AbbasKiarostami-LOD/date/2010
                         <br> https://w3id.org/AbbasKiarostami-LOD/date/2021
                         <br> https://w3id.org/AbbasKiarostami-LOD/date/1998
                         <br> https://w3id.org/AbbasKiarostami-LOD/date/1997
                         <br>
-                        <br> https://w3id.org/AbbasKiarostami-LOD/institution/cineteca-di-bologna
-                        <br> https://w3id.org/AbbasKiarostami-LOD/institution/
                         <br>
-                        <br> hhttps://w3id.org/AbbasKiarostami-LOD/event/where-is-kiarostami
-                        <br> https://w3id.org/AbbasKiarostami-LOD/object/poster-taste-of-cherry
+                        <br> https://w3id.org/AbbasKiarostami-LOD/institution/cineteca-di-bologna
+                        <br> https://w3id.org/AbbasKiarostami-LOD/organization/cinema-modernissimo
+                        <br> https://w3id.org/AbbasKiarostami-LOD/organization/tehran-university
+                        <br> https://w3id.org/AbbasKiarostami-LOD/organization/School-of-visual-Art-N.Y.
+                        <br>
+                        <br> https://w3id.org/AbbasKiarostami-LOD/event/where-is-kiarostami
+                        <br> https://w3id.org/AbbasKiarostami-LOD/event/1997-cannes-festival
+                        <br>
+                        <br> https://w3id.org/AbbasKiarostami-LOD/object/modernissimo-chair-Kiarostami
+                        <br>
+                        <br> https://w3id.org/AbbasKiarostami-LOD/movie/taste-of-cherry
+                        <br> https://w3id.org/AbbasKiarostami-LOD/movie/shirin
+                        <br>
+                        <br> https://w3id.org/AbbasKiarostami-LOD/award/palme-dor-1997
                         <br>
                         <br> https://w3id.org/AbbasKiarostami-LOD/person/abbas-kiarostami
-                        <br>
+                        <br> https://w3id.org/AbbasKiarostami-LOD/person/juliette-binoche
+                        <br> https://w3id.org/AbbasKiarostami-LOD/person/kevin-gaor
+                        <br> https://w3id.org/AbbasKiarostami-LOD/person/massoumeh-lahidji
+                        <br> https://w3id.org/AbbasKiarostami-LOD/person/william-shimell
+                        <br> https://w3id.org/AbbasKiarostami-LOD/person/sylvie-pras
                     </p>
+
+
                     <br><br>
                     <h2 id="rdfv" class="sectitle" style="font-size: 20pt;">RDF Visualization</h2>
                     <div class="img-magnifier-container "> <img id="myimage" src="" alt="RDF Visualizationn" style="max-width:100%;max-height:100%; border: 2px solid #b4bca3;"></div>
