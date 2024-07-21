@@ -1,0 +1,360 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiheader>
+        <fileDesc>
+            <titleStmt>
+                <title>Selected Poems by Abbas Kiarostami: digital edition</title>
+                <author>
+                    <persName>
+                        <forename>Abbas</forename>
+                        <surname>Kiarostami</surname>
+                    </persName>
+                    <idno type="VIAF">https://viaf.org/viaf/114753296/</idno>
+                
+                </author>                
+            </titleStmt>
+            <editionStmt>
+                <edition>A student edition <date>July 2024</date></edition>
+                <respStmt>
+                    <resp>annotations by</resp>
+                    <name>Ahmadreza Nazari, Nazanin Fakharian, Zahra Faraji</name>
+                </respStmt>
+            </editionStmt>
+
+            <publicationStmt>
+                <publisher>university of Bologna</publisher>
+                <pubPlace>Bologna</pubPlace>
+                <date>2024</date>
+                <availability><p>open access</p></availability>
+                <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY</licence>
+            </publicationStmt>
+
+        <!--Notes on the source used for preparig this digital edition-->
+            <sourceDesc>
+                <bibl type="book">
+                    <title lang="en">A Wolf Lying in Wait</title>
+                    <subTitle>Selected Poems</subTitle>
+                    <author>
+                        <persName>
+                            <forename>Abbas</forename>
+                            <surname>Kiarostami</surname>
+                        </persName>
+                        <idno type="VIAF">https://viaf.org/viaf/114753296/</idno>
+                        <birth when="1940-06-22">22 June 1940</birth>
+                        <death when="2016-07-04">4 July 2016</death>
+                    </author>
+                    <title lang="fa">گرگی در کمین</title>
+                    <editor role="translator">
+                        <persName>Karim Emami</persName>
+                        <idno type="DBpedia">https://dbpedia.org/page/Karim_Emami</idno>
+                    </editor>
+
+                    <editor role="translator">Michael Beard</editor>
+                    <publisher>Sokhan</publisher>
+                    <pubPlace>
+                        <placeName>Tehran</placeName>
+                        <idno type="GeoNames">https://www.geonames.org/112931/tehran.html</idno>
+                        <idno type="DBpedia">https://dbpedia.org/page/Tehran</idno>
+                    </pubPlace>
+                    <date>2005</date>
+                    <idno type="ISBN">964-372-125-6</idno>
+                    <ptr target="https://archive.org/details/abbas-kiarostami-epdf-pub-a-wolf-lying-in-wait-selected-poems"/>
+                </bibl>
+            </sourceDesc>
+
+            <extent>
+                <measure unit="KB" quantity="100">About 100 KB</measure>
+                <measure unit="pages" quantity="10">10 pages of the original source</measure>
+            </extent>
+        </fileDesc>
+    </teiheader>
+    <text>
+        <body>
+            <h1>The poems of Kiarostami</h1>
+
+        <!--The English translation of the poem-->
+            <div type="translation of poem" n="1" lang="en">
+                <lg type="free verse">
+                    <l>A red dotted line on the white snow</l>
+                    <l>wounded game</l>
+                    <l>limping away.</l>
+                </lg>
+            </div>
+            
+        <!--The Original Persian transcription of the poem-->
+            <div type="original poem" n="۱" lang="fa">
+                <lg type="free verse">
+                    <l>خط سرخی بر سفیدی برف</l>
+                    <l>شکاری زخمی</l>
+                    <l>.لنگ‌لنگان</l>
+                </lg>
+            </div>
+
+        <!--The English translation of the poem-->
+            <div type="translation of poem" n="2" lang="en">
+                <lg type="free verse">
+                    <l>A white foal</l>
+                    <l>was bom</l>
+                    <l>to a black mare</l>
+                    <l>at first light.</l>
+                </lg>
+            </div>
+
+        <!--The Original Persian transcription of the poem-->
+            <div type="original poem" n="۲" lang="fa">
+                <lg type="free verse">
+                    <l>کره اسبی سفید</l>
+                    <l>زاده شد</l>
+                    <l>از ماده اسبی سیاه</l>
+                    <l>در آغاز سپیده‌دم.</l>
+                </lg>
+            </div>
+
+       <!--The English translation of the poem-->
+            <div type="translation of poem" n="3" lang="en">
+                <lg type="free verse">
+                    <l>The wind will carry</l>
+                    <l>the cherry blossoms away</l>
+                    <l>to the white of the clouds.</l>
+                </lg>
+            </div>
+        
+        <!--The Original Persian transcription of the poem-->
+            <div type="original poem" n="۳" lang="fa">
+                <lg type="free verse">
+                    <l>باد با خود خواهد برد</l>
+                    <l>شکوفه‌های گیلاس را</l>
+                    <l>تا سپیدی ابرها.</l>
+                </lg>
+            </div>
+
+       <!--The English translation of the poem-->
+            <div type="translation of poem" n="4" lang="en">
+                <lg type="free verse">
+                    <l>After every cresting wave</l>
+                    <l>three wavelets</l>
+                    <l>after every three wavelets</l>
+                    <l>another cresting wave.</l>
+                </lg>
+            </div>
+        
+        <!--The Original Persian transcription of the poem-->
+            <div type="original poem" n="۴" lang="fa">
+                <lg type="free verse">
+                    <l>در پس هر موج بلند</l>
+                    <l>سه موج کوتاه</l>
+                    <l>در پس هر سه موج کوتاه</l>
+                    <l>یک موج بلند</l>
+                </lg>
+            </div>
+
+       <!--The English translation of the poem-->
+            <div type="translation of poem" n="5" lang="en">
+                <lg type="free verse">
+                    <l>I escorted</l>
+                    <l>the moon</l>
+                    <l>down to the heart of a dark cloud.</l>
+                    <l>I drank some wine and fell asleep.</l>
+                </lg>
+            </div>
+        
+        <!--The Original Persian transcription of the poem-->
+            <div type="original poem" n="۵" lang="fa">
+                <lg type="free verse">
+                    <l>بدرقه کردم</l>
+                    <l>ماه را</l>
+                    <l>تا دلِ ابری تیره،</l>
+                    ‌<l>شراب خوردم و خفتم.</l>
+                </lg>
+            </div>
+
+       <!--The English translation of the poem-->
+            <div type="translation of poem" n="6" lang="en">
+                <lg type="free verse">
+                    <l>The moon grows pale</l>
+                    <l>at dawn.</l>
+                    <l>The star vanishes</l>
+                    <l>as the cock crows.</l>
+                </lg>
+            </div>
+        
+        <!--The Original Persian transcription of the poem-->
+            <div type="original poem" n="۶" lang="fa">
+                <lg type="free verse">
+                    <l>رنگ می‌بازد ماه</l>
+                    <l>در سپیده‌دم.</l>
+                    <l>ستاره ناپدید می‌شود</l>
+                    <l>از بانگ خروس</l>
+                </lg>
+            </div>
+
+
+       <!--The English translation of the poem-->
+            <div type="translation of poem" n="7" lang="en">
+                <lg type="free verse">
+                    <l>As the air grew dark</l>
+                    <l>the scent of gillyflowers filled the air.</l>
+                </lg>
+            </div>
+        
+        <!--The Original Persian transcription of the poem-->
+            <div type="original poem" n="۷" lang="fa">
+                <lg type="free verse">
+                    <l>هوا که تاریک شد</l>
+                    <l>بوی شب‌بو پیچید.</l>
+                </lg>
+            </div>
+
+
+       <!--The English translation of the poem-->
+            <div type="translation of poem" n="8" lang="en">
+                <lg type="free verse">
+                    <l>A bird</l>
+                    <l>sings in the middle of the night;</l>
+                    <l>unfamiliar</l>
+                    <l>even to the birds.</l>
+                </lg>
+            </div>
+        
+        <!--The Original Persian transcription of the poem-->
+            <div type="original poem" n="۸" lang="fa">
+                <lg type="free verse">
+                    <l>پرنده‌ای</l>
+                    <l>می‌خواندنیمه‌های شب،</l>
+                    <l>نا آشنا</l>
+                    <l>حتی برای پرندگان.</l>
+                </lg>
+            </div>
+
+       <!--The English translation of the poem-->
+            <div type="translation of poem" n="9" lang="en">
+                <lg type="free verse">
+                    <l>A scarecrow</l>
+                    <l>hatless and coatless</l>
+                    <l>in a cold winter night.</l>
+                </lg>
+            </div>
+        
+        <!--The Original Persian transcription of the poem-->
+            <div type="original poem" n="۹" lang="fa">
+                <lg type="free verse">
+                    <l>مترسکی بی‌بالاپوش</l>
+                    <l>در شب زمستان سرد.</l>
+                </lg>
+            </div>
+
+       <!--The English translation of the poem-->
+            <div type="translation of poem" n="10" lang="en">
+                <lg type="free verse">
+                    <l>Night</l>
+                    <l>sea</l>
+                    <l>winter.</l>
+                </lg>
+            </div>
+        
+        <!--The Original Persian transcription of the poem-->
+            <div type="original poem" n="۱۰" lang="fa">
+                <lg type="free verse">
+                    <l>شب</l>
+                    <l>دریا</l>
+                    <l>زمستان.</l>
+                </lg>
+            </div>
+
+       <!--The English translation of the poem-->
+            <div type="translation of poem" n="11" lang="en">
+                <lg type="free verse">
+                    <l>The glow of the harvest moon</l>
+                    <l>upon the window</l>
+                    <l>made the glass tremble.</l>
+                </lg>
+            </div>
+        
+        <!--The Original Persian transcription of the poem-->
+            <div type="original poem" n="۱۱" lang="fa">
+                <lg type="free verse">
+                    <l>تابش اولین مهتاب پاییزی</l>
+                    <l>بر روی پنجره</l>
+                    <l>شیشه‌ها را می‌لرزاند.</l>
+                </lg>
+            </div>
+
+       <!--The English translation of the poem-->
+            <div type="translation of poem" n="12" lang="en">
+                <lg type="free verse">
+                    <l>When I think of the flowers</l>
+                    <l>a wind blows so cold</l>
+                    <l>I get up and close the windows.</l>
+                </lg>
+            </div>
+        
+        <!--The Original Persian transcription of the poem-->
+            <div type="original poem" n="۱۲" lang="fa">
+                <lg type="free verse">
+                    <l>به گل‌ها که فکر می‌کنم</l>
+                    <l>باد سرد می‌وزد،</l>
+                    <l>برمی‌خیزم پنجره را می‌بندم.</l>
+                </lg>
+            </div>
+
+       <!--The English translation of the poem-->
+            <div type="translation of poem" n="13" lang="en">
+                <lg type="free verse">
+                    <l>At the earliest assault of the autumn wind</l>
+                    <l>a horde of leaves</l>
+                    <l>seeks asylum in my room.</l>
+                </lg>
+            </div>
+        
+        <!--The Original Persian transcription of the poem-->
+            <div type="original poem" n="۱۳" lang="fa">
+                <lg type="free verse">
+                    <l>در اولین هجوم باد پاییزی</l>
+                    <l>فوجی از برگ‌ها</l>
+                    <l>به اتاقم پناه گرفتند.</l>
+                </lg>
+            </div>
+
+       <!--The English translation of the poem-->
+            <div type="translation of poem" n="14" lang="en">
+                <lg type="free verse">
+                    <l>I dream</l>
+                    <l>that I am buried</l>
+                    <l>under the autumn leaves.</l>
+                    <l>My body germinates.</l>
+                </lg>
+            </div>
+        
+        <!--The Original Persian transcription of the poem-->
+            <div type="original poem" n="۱۴" lang="fa">
+                <lg type="free verse">
+                    <l>خواب می‌بینم</l>
+                    <l>زیر برگ‌های پاییزی</l>
+                    <l>مدفونم</l>
+                    <l>جوانه می‌زنم تند</l>
+                </lg>
+            </div>
+
+       <!--The English translation of the poem-->
+            <div type="translation of poem" n="15" lang="en">
+                <lg type="free verse">
+                    <l>Two autumn leaves</l>
+                    <l>have hidden themselves</l>
+                    <l>in my shirtsleeves</l>
+                    <l>hanging on the clothesline.</l>
+                </lg>
+            </div>
+        
+        <!--The Original Persian transcription of the poem-->
+            <div type="original poem" n="۱۵" lang="fa">
+                <lg type="free verse">
+                    <l>دو برگ پاییزی</l>
+                    <l>مخفی کرده‌اند خود را</l>
+                    <l>در آستین پیراهنم</l>
+                    <l>بر بند رخت.</l>
+                </lg>
+            </div>
+
+        </body>
+    </text>
+
+</TEI>
