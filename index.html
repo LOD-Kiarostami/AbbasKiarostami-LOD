@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-tomorrow.min.css">
     <!-- Google Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
@@ -424,7 +425,7 @@
                             <td>crm: P1 identifies</td>
                             <td>wdt: P356 DOI</td>
                             <td>020</td>
-                            <td>frbroo: F13 Identifier</td>
+                            <td>frbroo: F13</td>
                         </tr>
                         <tr>
                             <td class="td1">Genre</td>
@@ -444,7 +445,7 @@
                             <td>crm: P129 is subject of</td>
                             <td>wdt: P921 main subject P180 depicts</td>
                             <td>76xx</td>
-                            <td>frbroo: R59 had typical subject</td>
+                            <td>frbroo: R59</td>
                         </tr>
                         <tr>
                             <td class="td1">Language</td>
@@ -454,7 +455,7 @@
                             <td>crm: P72 has language</td>
                             <td>wdt: P407 language of</td>
                             <td>377</td>
-                            <td>frbroo: R60 used</td>
+                            <td>frbroo: R60</td>
                         </tr>
                         <tr>
                             <td class="td1">Translation</td>
@@ -494,7 +495,7 @@
                             <td>crm: P179 had sales price</td>
                             <td>N/A</td>
                             <td>020 $c</td>
-                            <td>frbroo: E97 Monetary Amount</td>
+                            <td>frbroo: E97</td>
                         </tr>
                         <tr>
                             <td class="td1">Copyright</td>
@@ -551,7 +552,7 @@
                             <td>crm: P7 took place at</td>
                             <td>wdt: P291 place of publication</td>
                             <td>752</td>
-                            <td>frbroo: R25i was performed in</td>
+                            <td>frbroo: R25i</td>
                         </tr>
 
                     </table>
@@ -579,7 +580,7 @@
                             <td>crm: E12 Production</td>
                             <td>wdt: P577 publication date P1191 date of first performance</td>
                             <td>264$c</td>
-                            <td>frbroo: R23 has date of production</td>
+                            <td>frbroo: R23</td>
                         </tr>
                         <tr>
                             <td class="td1">Date of creation</td>
@@ -589,7 +590,7 @@
                             <td>crm: E12 Production</td>
                             <td>wdt: P2754 production date</td>
                             <td>500</td>
-                            <td>frbroo: R12 has date of creation</td>
+                            <td>frbroo: R12</td>
                         </tr>
                         <tr>
                             <td class="td1">Duration</td>
@@ -1160,8 +1161,7 @@
 
                     <h2 id="rdfp" class="sectitle" style="font-size: 20pt;">RDF Production</h2>
                     <p style="text-align:justify;">Three notable items sourced from various institutions were chosen as focal points for the RDF Production process. Initially, URIs were generated to describe key entities within these selected items. Subsequently, prefixes for the relevant
-                        ontologies were defined, and triples were constructed using Turtle serialization. These triples emphasized relationships among the items and their entities, aiming to link with other relevant resources and authorities wherever
-                        feasible.
+                        ontologies were defined, and triples were constructed using Turtle serialization. These triples emphasize relationships among the items and their entities, aiming to link with other relevant resources and authorities wherever feasible.
                     </p>
 
 
@@ -1188,7 +1188,7 @@
                         <br> https://w3id.org/AbbasKiarostami-LOD/date/1998
                         <br> https://w3id.org/AbbasKiarostami-LOD/date/1997
                         <br>
-                        <br>
+
                         <br> https://w3id.org/AbbasKiarostami-LOD/organization/cineteca-di-bologna
                         <br> https://w3id.org/AbbasKiarostami-LOD/organization/cinema-modernissimo
                         <br> https://w3id.org/AbbasKiarostami-LOD/organization/tehran-university
@@ -1211,7 +1211,15 @@
                         <br> https://w3id.org/AbbasKiarostami-LOD/person/william-shimell
                         <br> https://w3id.org/AbbasKiarostami-LOD/person/sylvie-pras
                     </p>
+                    <br><br>
+                    <p>
+                        The turtle/rdf representation is produced using python. you can see the python code <a href="https://github.com/LOD-Kiarostami/AbbasKiarostami-LOD/blob/main/rdf-production/rdf-production.py" target="_blank">here</a>.
+                    </p>
 
+
+                    <pre id="code" class="line-numbers"></pre>
+                    <br><br>
+                    <p>This is also the <a href="https://github.com/LOD-Kiarostami/AbbasKiarostami-LOD/blob/main/rdf-production/rdf-production.ttl" target="_blank">link</a> to the raw code of tertle file.</p>
 
                     <br><br>
                     <h2 id="rdfv" class="sectitle" style="font-size: 20pt;">RDF Visualization</h2>
@@ -1221,7 +1229,11 @@
                         class="newtabmyBtn">Zoom Image</button></a>
                     <br><br>
                     <h2 id="process" class="sectitle" style="font-size: 20pt;">Text Processing</h2>
-                    <p style="text-align:justify;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sit commodi officiis quisquam repudiandae, neque deleniti consequuntur suscipit nobis eos ipsam expedita obcaecati sint maxime? Neque inventore quibusdam consequuntur excepturi?
+                    <p>The book "A Wolf Lying in Wait: Selected Poems by Abbas Kiarostami" was chosen for text processing operations, and a ,a <a href="text-processing/a-wolf-lying-in-wait.xml" target="_blank">TEI/XML file</a> for several pages of the book
+                        was prepared. Using <a href="text-processing/teixml-to-html.py" target="_blank">Python</a> and based on an <a href="text-processing/stylesheet.xsl" target="_blank">XSL stylesheet file</a>, an <a href="text-processing/a-wolf-lying-in-wait.html"
+                            target="_blank">HTML representation</a> of this file was then generated. In the final task, a <a href="text-processing/tei-to-rdf.py" target="_blank">Python script</a> was used to produce a <a href="text-processing/TEI-to-RDF-turtle.ttl"
+                            target="_blank">Turtle/RDF</a> output of the XML file. Since the selected text was a poem, additional triples were created from the TEIheader element of the TEI/XML file. The triples included the number of poems, language, genre,
+                        and lines from the text to produce the RDF.
                     </p>
                 </div>
             </div>
@@ -1235,23 +1247,23 @@
                     <h2 class="teamtitle">The Team</h2>
                     <section class="scapolotte-container">
                         <div class="scapolotte">
-                            <a title="Zahra Farajihormozi"><img src="" alt="Zahra Farajihormozi" style="width:100%" class="polaroidimg">
+                            <a title="Zahra Farajihormozi"><img src="images/member-1.jpg" alt="Zahra Farajihormozi" style="width:100%" class="polaroidimg">
                                 <div class="polartext">Zahra Farajihormozi<br>
-                                    <a href="mailto: "><i
+                                    <a href="mailto: zahra.farajihormozi@studio.unibo.it"><i
                                             class="material-icons-outlined nav-link" style="font-size:30px;"
                                             id="mailbutton">mail</i></a>
-                                    <a href="" target="_blank"><span class="material-symbols-rounded nav-link"
+                                    <a href="https://www.linkedin.com/in/zahrafarajih/" target="_blank"><span class="material-symbols-rounded nav-link"
                                             style="font-size:30px;" id="mailbutton">person_add</span></a>
                                 </div>
                             </a>
                         </div>
                         <div class="scapolotte">
-                            <a title="Ahmadreza Nazari"><img src="" alt="Ahmadreza Nazari" style="width:100%" class="polaroidimg">
+                            <a title="Ahmadreza Nazari"><img src="images/member-2.jpg" alt="Ahmadreza Nazari" style="width:100%" class="polaroidimg">
                                 <div class="polartext">Ahmadreza Nazari<br>
-                                    <a href="mailto: "><i
+                                    <a href="mailto: ahmadreza.nazari@studio.unibo.it"><i
                                             class="material-icons-outlined nav-link" style="font-size:30px;"
                                             id="mailbutton">mail</i></a>
-                                    <a href="" target="_blank"><span
+                                    <a href="https://www.linkedin.com/in/ahmadreza-nazari/" target="_blank"><span
                                             class="material-symbols-rounded nav-link" style="font-size:30px;"
                                             id="mailbutton">person_add</span></a>
 
@@ -1259,12 +1271,12 @@
                             </a>
                         </div>
                         <div class="scapolotte">
-                            <a title="Nazanin Fakharian"><img src="" alt="Nazanin Fakharian" style="width:100%" class="polaroidimg">
+                            <a title="Nazanin Fakharian"><img src="images/member-3.jpg" alt="Nazanin Fakharian" style="width:100%" class="polaroidimg">
                                 <div class="polartext">Nazanin Fakharian<br>
-                                    <a href="mailto: "><i
+                                    <a href="mailto: nazanin.fakharian@studio.unibo.it"><i
                                             class="material-icons-outlined nav-link" style="font-size:30px;"
                                             id="mailbutton">mail</i></a>
-                                    <a href="" target="_blank"><span class="material-symbols-rounded nav-link"
+                                    <a href="https://www.linkedin.com/in/nazanin-fakharian-92b9442a0/" target="_blank"><span class="material-symbols-rounded nav-link"
                                             style="font-size:30px;" id="mailbutton">person_add</span></a>
                                 </div>
                             </a>
@@ -1276,11 +1288,23 @@
     </section>
     <footer class="py-5 bg-dark">
         <div class="container px-4">
-            <p class="m-0 text-center text-white">&copy; Kiarostami, LOD Project <br><br> Abbas Kiarostami is a Linked Open Data project developed for the "Knowledge Organization and Cultural Heritage" course (a.a. 2023/2024) within the Digital Humanities and Digital Knowledge Master's Degree
+            <p class="m-0 text-center text-white">&copy; Kiarostami, LOD Project <br><br> Abbas Kiarostami is a Linked Open Data project developed for "Knowledge Organization and Cultural Heritage" course (a.a. 2023/2024) within the Digital Humanities and Digital Knowledge Master's Degree
                 at Alma Mater Studiorum - University of Bologna.
             </p>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+
+    <script>
+        async function fetchCode() {
+            const response = await fetch('https://raw.githubusercontent.com/LOD-Kiarostami/AbbasKiarostami-LOD/main/rdf-production/rdf-production.ttl');
+            const text = await response.text();
+            document.getElementById('code').textContent = text;
+        }
+
+        fetchCode();
+    </script>
 </body>
 
 </html>

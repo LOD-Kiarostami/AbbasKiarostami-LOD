@@ -11703,6 +11703,21 @@ footer a:hover {
     right: -10px;
 }
 
+pre {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.line-numbers-rows {
+    padding-right: 10px;
+    border-right: 10px solid #1e2125;
+}
+
 @media (max-width: 600px) {
     .sectitle {
         text-align: center;
