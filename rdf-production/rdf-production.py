@@ -14,9 +14,8 @@ namespace_mappings = {
     "RDFS":RDFS,
     "OWL": OWL,
     "DCTERMS": DCTERMS,
-    "XSD": Namespace("http://www.w3.org/2001/XMLSchema#"),
     "TIME": Namespace("http://www.w3.org/2006/time#"),
-    "FRBROO": Namespace("http://iflastandards.info/ns/fr/frbroo/"),  # Example for FRBROO namespace
+    "FRBROO": Namespace("http://iflastandards.info/ns/fr/frbroo/"),
 }
 
 # Create a new RDF graph
